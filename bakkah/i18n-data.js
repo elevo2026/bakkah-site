@@ -1,0 +1,1008 @@
+/* GENERE par contenu/generer.py depuis contenu/i18n.json : ne pas modifier a la main (modifier le JSON puis relancer). */
+window.BK_I18N = {
+ "fr": {
+  "meta": {
+   "langName": "Français",
+   "dir": "ltr",
+   "currency": "DH",
+   "title": "BAKKAH | Parfums, abayas et cadeaux de luxe au Maroc",
+   "description": "Bakkah, boutique de luxe au Maroc : parfums authentiques, abayas, qamis, oud et coffrets cadeaux. Commande simple via WhatsApp."
+  },
+  "nav": {
+   "home": "Accueil",
+   "scent": "Profil olfactif",
+   "commitments": "Engagements",
+   "catalogue": "Catalogue",
+   "faq": "FAQ",
+   "newsletter": "Newsletter",
+   "contact": "Contact",
+   "cart": "Panier",
+   "language": "Langue",
+   "menu": "Menu",
+   "boutique": "La boutique"
+  },
+  "buttons": {
+   "addToCart": "Ajouter au panier",
+   "orderWhatsapp": "Commander via WhatsApp",
+   "view": "Voir",
+   "viewDetails": "Voir la fiche",
+   "filter": "Filtrer",
+   "resetFilters": "Réinitialiser",
+   "all": "Tout voir",
+   "discover": "Découvrir la collection",
+   "close": "Fermer",
+   "remove": "Retirer",
+   "continueShopping": "Poursuivre mes achats",
+   "subscribe": "S'inscrire",
+   "next": "Suivant",
+   "previous": "Précédent",
+   "showMore": "Voir plus",
+   "showLess": "Voir moins",
+   "contactUs": "Nous écrire",
+   "viewOnMap": "Itinéraire",
+   "leaveReview": "Laisser un avis",
+   "added": "Ajouté au panier"
+  },
+  "cart": {
+   "title": "Votre panier",
+   "summary": "Récapitulatif de la commande",
+   "empty": "Votre panier est vide.",
+   "emptyHint": "Parcourez nos créations et ajoutez vos coups de cœur.",
+   "quantity": "Quantité",
+   "unitPrice": "Prix unitaire",
+   "subtotal": "Sous-total",
+   "total": "Total",
+   "items": "article(s)",
+   "name": "Nom (facultatif)",
+   "address": "Adresse (facultatif)",
+   "city": "Ville (facultatif)",
+   "optionalNote": "Ces informations sont facultatives : vous pourrez les préciser directement sur WhatsApp.",
+   "priceOnRequest": "Prix sur demande",
+   "totalToConfirm": "à confirmer sur WhatsApp",
+   "paymentNote": "Paiement à la livraison selon disponibilité, à confirmer lors de l'échange WhatsApp.",
+   "waUnset": "Le numéro WhatsApp de la boutique n'est pas encore configuré.",
+   "note": "Note (facultatif)"
+  },
+  "loader": {
+   "text": "Bakkah ouvre ses portes…",
+   "tagline": "Parfums • Abayas • Cadeaux de luxe"
+  },
+  "hero": {
+   "h1": "BAKKAH, parfums de luxe, abayas et cadeaux d'exception au Maroc",
+   "subtitle": "Des fragrances authentiques, des pièces choisies avec exigence, des écrins pensés pour offrir.",
+   "tagline": "Parfums • Abayas • Cadeaux de luxe",
+   "scrollHint": "Faites défiler pour découvrir",
+   "cta": "Découvrir la collection",
+   "cta2": "Voir le catalogue"
+  },
+  "sections": {
+   "featured": {
+    "title": "Les parfums vedettes",
+    "subtitle": "Six signatures à découvrir, l'une après l'autre."
+   },
+   "scent": {
+    "title": "Profil olfactif",
+    "subtitle": "Chaque parfum se raconte en trois temps."
+   },
+   "commitments": {
+    "title": "Nos engagements"
+   },
+   "catalogue": {
+    "title": "Le catalogue",
+    "subtitle": "Parfums, abayas, qamis, oud et plus encore."
+   },
+   "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce qu'il faut savoir avant de commander."
+   },
+   "newsletter": {
+    "title": "Restez dans le sillage",
+    "subtitle": "Nouveautés, arrivages et offres privées, directement dans votre boîte mail."
+   },
+   "reviews": {
+    "title": "Ils nous font confiance",
+    "cta": "Laisser un avis Google"
+   },
+   "visit": {
+    "title": "Nous trouver",
+    "cta": "Itinéraire sur Maps"
+   }
+  },
+  "olfactive": {
+   "top": "Notes de tête",
+   "heart": "Notes de cœur",
+   "base": "Notes de fond",
+   "toConfirm": "Notes à confirmer",
+   "brand": "Marque",
+   "size": "Contenance",
+   "gender": "Pour",
+   "description": "Description olfactive"
+  },
+  "commitments": {
+   "c1": {
+    "crossed": "Contrefaçons",
+    "title": "Authentique, rien d'autre",
+    "text": "Chaque flacon est sélectionné auprès de maisons reconnues. Nous ne vendons que des parfums authentiques, scellés et fidèles à leur création."
+   },
+   "c2": {
+    "crossed": "Tenue faible",
+    "title": "Une longue tenue",
+    "text": "Nous choisissons des eaux de parfum concentrées, au sillage généreux, qui accompagnent votre journée jusqu'au soir."
+   },
+   "c3": {
+    "crossed": "Emballage banal",
+    "title": "Un coffret cadeau",
+    "text": "Chaque commande peut être présentée dans un écrin soigné, noir et or, prêt à offrir et à marquer les esprits."
+   },
+   "c4": {
+    "crossed": "Achat à l'aveugle",
+    "title": "Un conseil personnalisé",
+    "text": "Écrivez-nous sur WhatsApp : nous vous guidons vers la fragrance qui vous ressemble, selon vos goûts et l'occasion."
+   }
+  },
+  "signature": {
+   "word": "BAKKAH",
+   "arabic": "بكة",
+   "line": "L'élégance a un parfum."
+  },
+  "categories": {
+   "perfumes": "Parfums",
+   "packs": "Packs et coffrets",
+   "abayas": "Abayas et voiles",
+   "qamis": "Qamis",
+   "watches": "Montres",
+   "prayer": "Tapis de prière et tasbih",
+   "oud": "Oud et bakhour",
+   "promos": "Promos"
+  },
+  "filters": {
+   "men": "Homme",
+   "women": "Femme",
+   "unisex": "Mixte",
+   "abayas": "Abayas",
+   "veils": "Voiles",
+   "prayerMats": "Tapis de prière",
+   "tasbih": "Tasbih",
+   "oudScents": "Oud",
+   "bakhour": "Bakhour",
+   "incenseBurners": "Bakhouriyas (brûle-encens)",
+   "scentFilter": "Senteur",
+   "sizeFilter": "Taille",
+   "genderFilter": "Pour",
+   "brandFilter": "Marque",
+   "sortBy": "Trier par",
+   "featured": "Vedettes",
+   "newest": "Nouveautés",
+   "priceAsc": "Prix croissant",
+   "priceDesc": "Prix décroissant"
+  },
+  "product": {
+   "featuredBadge": "Vedette",
+   "promoBadge": "Promo",
+   "demoBadge": "Exemple",
+   "priceNull": "Prix sur demande",
+   "outOfStock": "Épuisé",
+   "foldable": "Bouton pliable",
+   "sizeGuide": "Guide des tailles",
+   "from": "À partir de",
+   "choose": "Choisir",
+   "noitem": "Aucun article dans cette catégorie.",
+   "variant": "Version"
+  },
+  "signatureScents": {
+   "title": "Senteurs disponibles"
+  },
+  "faq": {
+   "items": [
+    {
+     "q": "Livrez-vous partout au Maroc ?",
+     "a": "Oui, nous livrons dans toutes les villes du Maroc. Précisez votre ville lors de la commande sur WhatsApp et nous vous confirmons les modalités de livraison."
+    },
+    {
+     "q": "Puis-je payer à la livraison ?",
+     "a": "Le paiement à la livraison est généralement possible. Nous le confirmons avec vous lors de l'échange WhatsApp, selon votre ville et le montant de la commande."
+    },
+    {
+     "q": "Quels sont les délais de livraison ?",
+     "a": "Les délais varient selon la ville. Nous vous communiquons une estimation claire au moment de valider votre commande sur WhatsApp."
+    },
+    {
+     "q": "Vos parfums sont-ils authentiques ?",
+     "a": "Absolument. Tous nos parfums sont authentiques et proviennent de maisons reconnues. Nous ne proposons aucune contrefaçon."
+    },
+    {
+     "q": "Puis-je retourner ou échanger un article ?",
+     "a": "Contactez-nous sur WhatsApp dans les meilleurs délais après réception. Un article non utilisé, dans son emballage d'origine, peut faire l'objet d'un échange. Les conditions détaillées vous sont précisées lors de la commande."
+    },
+    {
+     "q": "Comment conserver mon parfum ?",
+     "a": "Gardez-le à l'abri de la lumière, de la chaleur et de l'humidité, de préférence dans son coffret d'origine. Évitez la salle de bain et la voiture, afin de préserver ses notes plus longtemps."
+    },
+    {
+     "q": "Comment choisir la taille d'une abaya ou d'un qamis ?",
+     "a": "Chaque fiche indique les tailles disponibles. En cas de doute, envoyez-nous votre taille habituelle et votre hauteur sur WhatsApp : nous vous conseillons la coupe la plus juste."
+    },
+    {
+     "q": "Comment passer commande via WhatsApp ?",
+     "a": "Ajoutez vos articles au panier, puis appuyez sur « Commander via WhatsApp ». Un message récapitulatif s'ouvre, prêt à envoyer : nous confirmons ensuite votre commande avec vous."
+    },
+    {
+     "q": "Proposez-vous des coffrets personnalisés ?",
+     "a": "Oui. Parfum, oud, montre ou tasbih : nous composons des coffrets sur mesure pour toutes les occasions. Décrivez-nous votre idée et votre budget sur WhatsApp."
+    },
+    {
+     "q": "Quels sont vos horaires et votre adresse ?",
+     "a": "Écrivez-nous sur WhatsApp au +212 671501152 pour connaître nos horaires et notre adresse. Un lien d'itinéraire est également disponible sur le site."
+    }
+   ]
+  },
+  "newsletter": {
+   "title": "Restez dans le sillage",
+   "text": "Recevez nos nouveautés et offres privées.",
+   "placeholder": "Votre adresse e-mail",
+   "button": "S'inscrire",
+   "success": "Merci, votre inscription est confirmée.",
+   "error": "Adresse e-mail invalide. Veuillez réessayer.",
+   "consent": "Vous pouvez vous désinscrire à tout moment."
+  },
+  "footer": {
+   "tagline": "Parfums • Abayas • Cadeaux de luxe",
+   "about": "Boutique de luxe au Maroc : parfums authentiques, abayas, qamis, oud et coffrets pour toutes les occasions.",
+   "followUs": "Suivez-nous",
+   "contact": "Contact",
+   "legal": "Mentions légales",
+   "terms": "Conditions générales de vente",
+   "privacy": "Politique de confidentialité",
+   "copyright": "© 2026 BAKKAH. Tous droits réservés.",
+   "whatsapp": "WhatsApp",
+   "facebook": "Facebook",
+   "tiktok": "TikTok",
+   "instagram": "Instagram",
+   "toTop": "Retour en haut",
+   "hours": "Horaires",
+   "address": "Adresse"
+  },
+  "whatsapp": {
+   "orderTemplate": "Bonjour BAKKAH, je souhaite passer commande :\n\n{articles}\n\nTotal : {total}\n\nNom : {nom}\nAdresse : {adresse}\n\nMerci de confirmer la disponibilité et la livraison.",
+   "lineTemplate": "- {nom} x{quantite} : {prix}",
+   "generalMessage": "Bonjour BAKKAH, j'aimerais avoir des conseils.",
+   "notProvided": "non précisé"
+  },
+  "admin": {
+   "title": "Espace vendeur",
+   "login": "Connexion",
+   "logout": "Déconnexion",
+   "password": "Mot de passe",
+   "dashboard": "Tableau de bord",
+   "products": "Produits",
+   "addProduct": "Ajouter un produit",
+   "editProduct": "Modifier le produit",
+   "deleteProduct": "Supprimer le produit",
+   "confirmDelete": "Voulez-vous vraiment supprimer ce produit ?",
+   "name": "Nom",
+   "brand": "Marque",
+   "category": "Catégorie",
+   "price": "Prix (DH)",
+   "size": "Contenance",
+   "gender": "Genre",
+   "notes": "Notes olfactives",
+   "description": "Description",
+   "image": "Image",
+   "featured": "Vedette",
+   "stock": "Stock",
+   "available": "Disponible",
+   "save": "Enregistrer",
+   "cancel": "Annuler",
+   "saved": "Modifications enregistrées.",
+   "error": "Une erreur est survenue.",
+   "priceMissing": "Prix à saisir",
+   "languageTab": "Langue",
+   "required": "Champ obligatoire",
+   "orders": "Commandes",
+   "settings": "Réglages"
+  },
+  "sound": {
+   "label": "Son",
+   "on": "ON",
+   "off": "OFF"
+  },
+  "profile": {
+   "bg1": "ESSENCE",
+   "bg2": "SILLAGE"
+  },
+  "defaults": {
+   "address": "Maroc",
+   "hours": "Lun–Sam 10h–21h"
+  },
+  "boutique": {
+   "title": "Notre boutique",
+   "kicker": "Venez nous voir"
+  },
+  "a11y": {
+   "canvas": "Flacons de parfum Bakkah en 3D",
+   "home": "BAKKAH, accueil"
+  },
+  "legal": {
+   "mentions": "Mentions légales : à compléter par la boutique (raison sociale, adresse, RC, ICE, contact).",
+   "cgu": "Conditions générales de vente : à compléter par la boutique (commande via WhatsApp, paiement, livraison, retours).",
+   "privacy": "Politique de confidentialité : à compléter par la boutique. Les données saisies pour la commande ne sont utilisées que pour traiter votre demande."
+  },
+  "units": {
+   "ml": "ml"
+  },
+  "concentration": {
+   "edp": "EDP",
+   "extrait": "Extrait de parfum"
+  }
+ },
+ "en": {
+  "meta": {
+   "langName": "English",
+   "dir": "ltr",
+   "currency": "DH",
+   "title": "BAKKAH | Luxury perfumes, abayas and gifts in Morocco",
+   "description": "Bakkah, a luxury boutique in Morocco: authentic perfumes, abayas, qamis, oud and gift sets. Simple ordering via WhatsApp."
+  },
+  "nav": {
+   "home": "Home",
+   "scent": "Scent profile",
+   "commitments": "Our promise",
+   "catalogue": "Catalogue",
+   "faq": "FAQ",
+   "newsletter": "Newsletter",
+   "contact": "Contact",
+   "cart": "Cart",
+   "language": "Language",
+   "menu": "Menu",
+   "boutique": "The boutique"
+  },
+  "buttons": {
+   "addToCart": "Add to cart",
+   "orderWhatsapp": "Order via WhatsApp",
+   "view": "View",
+   "viewDetails": "View details",
+   "filter": "Filter",
+   "resetFilters": "Reset",
+   "all": "View all",
+   "discover": "Discover the collection",
+   "close": "Close",
+   "remove": "Remove",
+   "continueShopping": "Continue shopping",
+   "subscribe": "Subscribe",
+   "next": "Next",
+   "previous": "Previous",
+   "showMore": "Show more",
+   "showLess": "Show less",
+   "contactUs": "Message us",
+   "viewOnMap": "Get directions",
+   "leaveReview": "Leave a review",
+   "added": "Added to cart"
+  },
+  "cart": {
+   "title": "Your cart",
+   "summary": "Order summary",
+   "empty": "Your cart is empty.",
+   "emptyHint": "Browse our creations and add your favourites.",
+   "quantity": "Quantity",
+   "unitPrice": "Unit price",
+   "subtotal": "Subtotal",
+   "total": "Total",
+   "items": "item(s)",
+   "name": "Name (optional)",
+   "address": "Address (optional)",
+   "city": "City (optional)",
+   "optionalNote": "These details are optional: you can share them directly on WhatsApp.",
+   "priceOnRequest": "Price on request",
+   "totalToConfirm": "to be confirmed on WhatsApp",
+   "paymentNote": "Cash on delivery where available, to be confirmed during the WhatsApp conversation.",
+   "waUnset": "The shop's WhatsApp number is not set yet.",
+   "note": "Note (optional)"
+  },
+  "loader": {
+   "text": "Bakkah is opening its doors…",
+   "tagline": "Perfumes • Abayas • Luxury gifts"
+  },
+  "hero": {
+   "h1": "BAKKAH, luxury perfumes, abayas and exceptional gifts in Morocco",
+   "subtitle": "Authentic fragrances, carefully chosen pieces and gift boxes designed for giving.",
+   "tagline": "Perfumes • Abayas • Luxury gifts",
+   "scrollHint": "Scroll to discover",
+   "cta": "Discover the collection",
+   "cta2": "View the catalogue"
+  },
+  "sections": {
+   "featured": {
+    "title": "Featured fragrances",
+    "subtitle": "Six signature fragrances to discover, one by one."
+   },
+   "scent": {
+    "title": "Scent profile",
+    "subtitle": "Every fragrance unfolds in three acts."
+   },
+   "commitments": {
+    "title": "Our promise"
+   },
+   "catalogue": {
+    "title": "The catalogue",
+    "subtitle": "Perfumes, abayas, qamis, oud and more."
+   },
+   "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before ordering."
+   },
+   "newsletter": {
+    "title": "Stay close to the scent",
+    "subtitle": "New arrivals, restocks and private offers, straight to your inbox."
+   },
+   "reviews": {
+    "title": "Trusted by our customers",
+    "cta": "Leave a Google review"
+   },
+   "visit": {
+    "title": "Find us",
+    "cta": "Directions on Google Maps"
+   }
+  },
+  "olfactive": {
+   "top": "Top notes",
+   "heart": "Heart notes",
+   "base": "Base notes",
+   "toConfirm": "Notes to be confirmed",
+   "brand": "Brand",
+   "size": "Size",
+   "gender": "For",
+   "description": "Scent description"
+  },
+  "commitments": {
+   "c1": {
+    "crossed": "Counterfeits",
+    "title": "Authentic, always",
+    "text": "Every bottle is sourced from respected houses. We sell only authentic fragrances, sealed and true to their original creation."
+   },
+   "c2": {
+    "crossed": "Short-lived scent",
+    "title": "Lasting power",
+    "text": "We select concentrated eaux de parfum with a generous trail, designed to stay with you from morning to night."
+   },
+   "c3": {
+    "crossed": "Ordinary packaging",
+    "title": "Gift-ready",
+    "text": "Every order can arrive in a refined black and gold case, ready to give and impossible to forget."
+   },
+   "c4": {
+    "crossed": "Blind buying",
+    "title": "Personal advice",
+    "text": "Message us on WhatsApp: we will guide you to the fragrance that suits you, according to your taste and the occasion."
+   }
+  },
+  "signature": {
+   "word": "BAKKAH",
+   "arabic": "بكة",
+   "line": "Elegance has a scent."
+  },
+  "categories": {
+   "perfumes": "Perfumes",
+   "packs": "Gift Sets",
+   "abayas": "Abayas & Veils",
+   "qamis": "Qamis",
+   "watches": "Watches",
+   "prayer": "Prayer Mats & Tasbih",
+   "oud": "Oud & Bakhoor",
+   "promos": "Offers"
+  },
+  "filters": {
+   "men": "Men",
+   "women": "Women",
+   "unisex": "Unisex",
+   "abayas": "Abayas",
+   "veils": "Veils",
+   "prayerMats": "Prayer Mats",
+   "tasbih": "Tasbih",
+   "oudScents": "Oud",
+   "bakhour": "Bakhoor",
+   "incenseBurners": "Bakhoor Burners",
+   "scentFilter": "Scent",
+   "sizeFilter": "Size",
+   "genderFilter": "For",
+   "brandFilter": "Brand",
+   "sortBy": "Sort by",
+   "featured": "Featured",
+   "newest": "New arrivals",
+   "priceAsc": "Price: low to high",
+   "priceDesc": "Price: high to low"
+  },
+  "product": {
+   "featuredBadge": "Featured",
+   "promoBadge": "Offer",
+   "demoBadge": "Example",
+   "priceNull": "Price on request",
+   "outOfStock": "Sold out",
+   "foldable": "Folding button",
+   "sizeGuide": "Size guide",
+   "from": "From",
+   "choose": "Choose",
+   "noitem": "No item in this category.",
+   "variant": "Version"
+  },
+  "signatureScents": {
+   "title": "Available scents"
+  },
+  "faq": {
+   "items": [
+    {
+     "q": "Do you deliver across Morocco?",
+     "a": "Yes, we deliver to every city in Morocco. Tell us your city when ordering on WhatsApp and we will confirm the delivery details."
+    },
+    {
+     "q": "Can I pay on delivery?",
+     "a": "Cash on delivery is generally available. We confirm it with you during the WhatsApp conversation, depending on your city and the order amount."
+    },
+    {
+     "q": "How long does delivery take?",
+     "a": "Delivery times depend on your city. We give you a clear estimate when you confirm your order on WhatsApp."
+    },
+    {
+     "q": "Are your perfumes authentic?",
+     "a": "Absolutely. All our perfumes are authentic and come from respected houses. We never sell counterfeits."
+    },
+    {
+     "q": "Can I return or exchange an item?",
+     "a": "Contact us on WhatsApp as soon as possible after receiving your order. An unused item in its original packaging can be exchanged. Full conditions are shared when you order."
+    },
+    {
+     "q": "How should I store my perfume?",
+     "a": "Keep it away from light, heat and humidity, ideally in its original box. Avoid the bathroom and the car so its notes last longer."
+    },
+    {
+     "q": "How do I choose an abaya or qamis size?",
+     "a": "Each listing shows the available sizes. If in doubt, send us your size and height on WhatsApp and we will recommend the best fit."
+    },
+    {
+     "q": "How do I order via WhatsApp?",
+     "a": "Add your items to the cart, then tap \"Order via WhatsApp\". A summary message opens, ready to send, and we then confirm your order with you."
+    },
+    {
+     "q": "Do you offer personalised gift sets?",
+     "a": "Yes. Perfume, oud, watch or tasbih: we create bespoke gift sets for every occasion. Tell us your idea and budget on WhatsApp."
+    },
+    {
+     "q": "What are your opening hours and address?",
+     "a": "Message us on WhatsApp at +212 671501152 for our opening hours and address. A directions link is also available on the website."
+    }
+   ]
+  },
+  "newsletter": {
+   "title": "Stay close to the scent",
+   "text": "Receive our new arrivals and private offers.",
+   "placeholder": "Your email address",
+   "button": "Subscribe",
+   "success": "Thank you, your subscription is confirmed.",
+   "error": "Invalid email address. Please try again.",
+   "consent": "You can unsubscribe at any time."
+  },
+  "footer": {
+   "tagline": "Perfumes • Abayas • Luxury gifts",
+   "about": "A luxury boutique in Morocco: authentic perfumes, abayas, qamis, oud and gift sets for every occasion.",
+   "followUs": "Follow us",
+   "contact": "Contact",
+   "legal": "Legal notice",
+   "terms": "Terms of sale",
+   "privacy": "Privacy policy",
+   "copyright": "© 2026 BAKKAH. All rights reserved.",
+   "whatsapp": "WhatsApp",
+   "facebook": "Facebook",
+   "tiktok": "TikTok",
+   "instagram": "Instagram",
+   "toTop": "Back to top",
+   "hours": "Hours",
+   "address": "Address"
+  },
+  "whatsapp": {
+   "orderTemplate": "Hello BAKKAH, I would like to place an order:\n\n{articles}\n\nTotal: {total}\n\nName: {nom}\nAddress: {adresse}\n\nPlease confirm availability and delivery.",
+   "lineTemplate": "- {nom} x{quantite}: {prix}",
+   "generalMessage": "Hello BAKKAH, I would like some advice.",
+   "notProvided": "not specified"
+  },
+  "admin": {
+   "title": "Seller area",
+   "login": "Log in",
+   "logout": "Log out",
+   "password": "Password",
+   "dashboard": "Dashboard",
+   "products": "Products",
+   "addProduct": "Add a product",
+   "editProduct": "Edit product",
+   "deleteProduct": "Delete product",
+   "confirmDelete": "Are you sure you want to delete this product?",
+   "name": "Name",
+   "brand": "Brand",
+   "category": "Category",
+   "price": "Price (DH)",
+   "size": "Size",
+   "gender": "Gender",
+   "notes": "Scent notes",
+   "description": "Description",
+   "image": "Image",
+   "featured": "Featured",
+   "stock": "Stock",
+   "available": "Available",
+   "save": "Save",
+   "cancel": "Cancel",
+   "saved": "Changes saved.",
+   "error": "Something went wrong.",
+   "priceMissing": "Price to be entered",
+   "languageTab": "Language",
+   "required": "Required field",
+   "orders": "Orders",
+   "settings": "Settings"
+  },
+  "sound": {
+   "label": "Sound",
+   "on": "ON",
+   "off": "OFF"
+  },
+  "profile": {
+   "bg1": "ESSENCE",
+   "bg2": "TRAIL"
+  },
+  "defaults": {
+   "address": "Morocco",
+   "hours": "Mon–Sat 10am–9pm"
+  },
+  "boutique": {
+   "title": "Our boutique",
+   "kicker": "Come and see us"
+  },
+  "a11y": {
+   "canvas": "Bakkah perfume bottles in 3D",
+   "home": "BAKKAH, home"
+  },
+  "legal": {
+   "mentions": "Legal notice: to be completed by the shop (company name, address, registration number, contact).",
+   "cgu": "Terms of sale: to be completed by the shop (ordering via WhatsApp, payment, delivery, returns).",
+   "privacy": "Privacy policy: to be completed by the shop. The data entered for an order is only used to process your request."
+  },
+  "units": {
+   "ml": "ml"
+  },
+  "concentration": {
+   "edp": "EDP",
+   "extrait": "Extrait de parfum"
+  }
+ },
+ "ar": {
+  "meta": {
+   "langName": "العربية",
+   "dir": "rtl",
+   "currency": "درهم",
+   "title": "بكة | عطور وعبايات وهدايا فاخرة في المغرب",
+   "description": "بكة، متجر فاخر في المغرب: عطور أصلية وعبايات وقمصان وعود وعلب هدايا. اطلب بسهولة عبر واتساب."
+  },
+  "nav": {
+   "home": "الرئيسية",
+   "scent": "الملف العطري",
+   "commitments": "التزاماتنا",
+   "catalogue": "الكتالوج",
+   "faq": "الأسئلة الشائعة",
+   "newsletter": "النشرة البريدية",
+   "contact": "تواصل معنا",
+   "cart": "السلة",
+   "language": "اللغة",
+   "menu": "القائمة",
+   "boutique": "المتجر"
+  },
+  "buttons": {
+   "addToCart": "أضف إلى السلة",
+   "orderWhatsapp": "اطلب عبر واتساب",
+   "view": "عرض",
+   "viewDetails": "عرض التفاصيل",
+   "filter": "تصفية",
+   "resetFilters": "إعادة تعيين",
+   "all": "عرض الكل",
+   "discover": "اكتشف المجموعة",
+   "close": "إغلاق",
+   "remove": "إزالة",
+   "continueShopping": "متابعة التسوق",
+   "subscribe": "اشترك",
+   "next": "التالي",
+   "previous": "السابق",
+   "showMore": "عرض المزيد",
+   "showLess": "عرض أقل",
+   "contactUs": "راسلنا",
+   "viewOnMap": "كيفية الوصول",
+   "leaveReview": "اترك تقييمًا",
+   "added": "تمت الإضافة إلى السلة"
+  },
+  "cart": {
+   "title": "سلة التسوق",
+   "summary": "ملخص الطلب",
+   "empty": "سلتك فارغة.",
+   "emptyHint": "تصفح إبداعاتنا وأضف ما يعجبك.",
+   "quantity": "الكمية",
+   "unitPrice": "سعر الوحدة",
+   "subtotal": "المجموع الفرعي",
+   "total": "المجموع",
+   "items": "منتجات",
+   "name": "الاسم (اختياري)",
+   "address": "العنوان (اختياري)",
+   "city": "المدينة (اختياري)",
+   "optionalNote": "هذه المعلومات اختيارية، ويمكنك تقديمها مباشرة عبر واتساب.",
+   "priceOnRequest": "السعر عند الاستفسار",
+   "totalToConfirm": "سيتم تأكيده عبر واتساب",
+   "paymentNote": "الدفع عند الاستلام حسب التوفر، ويتم تأكيده خلال المحادثة عبر واتساب.",
+   "waUnset": "رقم واتساب المتجر غير مضبوط بعد.",
+   "note": "ملاحظة (اختياري)"
+  },
+  "loader": {
+   "text": "بكة تفتح أبوابها…",
+   "tagline": "عطور • عبايات • هدايا فاخرة"
+  },
+  "hero": {
+   "h1": "بكة، عطور فاخرة وعبايات وهدايا استثنائية في المغرب",
+   "subtitle": "عطور أصلية، وقطع مختارة بعناية، وعلب هدايا صُمّمت لتُهدى.",
+   "tagline": "عطور • عبايات • هدايا فاخرة",
+   "scrollHint": "مرّر للأسفل لتكتشف",
+   "cta": "اكتشف المجموعة",
+   "cta2": "تصفح الكتالوج"
+  },
+  "sections": {
+   "featured": {
+    "title": "عطورنا المميزة",
+    "subtitle": "ست بصمات عطرية تستحق الاكتشاف."
+   },
+   "scent": {
+    "title": "الملف العطري",
+    "subtitle": "لكل عطر حكاية في ثلاث مراحل."
+   },
+   "commitments": {
+    "title": "التزاماتنا"
+   },
+   "catalogue": {
+    "title": "الكتالوج",
+    "subtitle": "عطور وعبايات وقمصان وعود وأكثر."
+   },
+   "faq": {
+    "title": "الأسئلة الشائعة",
+    "subtitle": "كل ما تحتاج معرفته قبل الطلب."
+   },
+   "newsletter": {
+    "title": "ابقَ في أثر العطر",
+    "subtitle": "المنتجات الجديدة وآخر الوصولات والعروض الخاصة تصلك مباشرة إلى بريدك الإلكتروني."
+   },
+   "reviews": {
+    "title": "عملاؤنا يثقون بنا",
+    "cta": "اترك تقييمك على Google"
+   },
+   "visit": {
+    "title": "موقعنا",
+    "cta": "الطريق على خرائط Google"
+   }
+  },
+  "olfactive": {
+   "top": "نفحات الافتتاح",
+   "heart": "نفحات القلب",
+   "base": "نفحات القاعدة",
+   "toConfirm": "النفحات قيد التأكيد",
+   "brand": "العلامة التجارية",
+   "size": "الحجم",
+   "gender": "الفئة",
+   "description": "الوصف العطري"
+  },
+  "commitments": {
+   "c1": {
+    "crossed": "تقليد",
+    "title": "أصلي، دون سواه",
+    "text": "كل قارورة مختارة من دور عطور معروفة. لا نبيع إلا عطورًا أصلية ومختومة وفية لتركيبتها الأصلية."
+   },
+   "c2": {
+    "crossed": "ثبات ضعيف",
+    "title": "ثبات طويل",
+    "text": "نختار عطورًا مركّزة من فئة ماء العطر، بأثر سخي يرافقك من الصباح حتى المساء."
+   },
+   "c3": {
+    "crossed": "تغليف عادي",
+    "title": "علبة هدية فاخرة",
+    "text": "يمكن تقديم كل طلب في علبة أنيقة بالأسود والذهبي، جاهزة للإهداء وتترك أثرًا لا يُنسى."
+   },
+   "c4": {
+    "crossed": "شراء عشوائي",
+    "title": "نصيحة شخصية",
+    "text": "راسلنا عبر واتساب لنرشدك إلى العطر الذي يشبهك، بحسب ذوقك والمناسبة."
+   }
+  },
+  "signature": {
+   "word": "بكة",
+   "arabic": "BAKKAH",
+   "line": "للأناقة عطرها."
+  },
+  "categories": {
+   "perfumes": "العطور",
+   "packs": "الباقات وعلب الهدايا",
+   "abayas": "العبايات والحجاب",
+   "qamis": "القمصان الرجالية",
+   "watches": "الساعات",
+   "prayer": "سجادات الصلاة والمسابح",
+   "oud": "العود والبخور",
+   "promos": "العروض"
+  },
+  "filters": {
+   "men": "رجالي",
+   "women": "نسائي",
+   "unisex": "للجنسين",
+   "abayas": "عبايات",
+   "veils": "حجاب",
+   "prayerMats": "سجادات الصلاة",
+   "tasbih": "مسابح",
+   "oudScents": "عود",
+   "bakhour": "بخور",
+   "incenseBurners": "مباخر",
+   "scentFilter": "الرائحة",
+   "sizeFilter": "المقاس",
+   "genderFilter": "الفئة",
+   "brandFilter": "العلامة التجارية",
+   "sortBy": "ترتيب حسب",
+   "featured": "الأبرز",
+   "newest": "الأحدث",
+   "priceAsc": "السعر: من الأقل إلى الأعلى",
+   "priceDesc": "السعر: من الأعلى إلى الأقل"
+  },
+  "product": {
+   "featuredBadge": "مميز",
+   "promoBadge": "عرض",
+   "demoBadge": "نموذج",
+   "priceNull": "السعر عند الاستفسار",
+   "outOfStock": "نفدت الكمية",
+   "foldable": "زر قابل للطي",
+   "sizeGuide": "دليل المقاسات",
+   "from": "ابتداءً من",
+   "choose": "اختر",
+   "noitem": "لا توجد منتجات في هذا القسم.",
+   "variant": "النسخة"
+  },
+  "signatureScents": {
+   "title": "الروائح المتوفرة"
+  },
+  "faq": {
+   "items": [
+    {
+     "q": "هل تقومون بالتوصيل إلى جميع مدن المغرب؟",
+     "a": "نعم، نقوم بالتوصيل إلى جميع مدن المغرب. أخبرنا بمدينتك عند الطلب عبر واتساب وسنؤكد لك تفاصيل التوصيل."
+    },
+    {
+     "q": "هل يمكنني الدفع عند الاستلام؟",
+     "a": "الدفع عند الاستلام متاح عادةً، ونؤكده معك خلال المحادثة عبر واتساب بحسب مدينتك وقيمة الطلب."
+    },
+    {
+     "q": "كم تستغرق مدة التوصيل؟",
+     "a": "تختلف المدة باختلاف المدينة. نعطيك تقديرًا واضحًا عند تأكيد طلبك عبر واتساب."
+    },
+    {
+     "q": "هل عطوركم أصلية؟",
+     "a": "بالتأكيد. جميع عطورنا أصلية ومن دور عطور معروفة، ولا نبيع أي تقليد."
+    },
+    {
+     "q": "هل يمكنني إرجاع منتج أو استبداله؟",
+     "a": "تواصل معنا عبر واتساب في أقرب وقت بعد الاستلام. يمكن استبدال المنتج غير المستعمل في عبوته الأصلية، ونوضّح لك الشروط التفصيلية عند الطلب."
+    },
+    {
+     "q": "كيف أحافظ على عطري؟",
+     "a": "احفظه بعيدًا عن الضوء والحرارة والرطوبة، ويُفضَّل أن يبقى في علبته الأصلية. وتجنّب الحمّام والسيارة ليدوم أريجه مدة أطول."
+    },
+    {
+     "q": "كيف أختار مقاس العباية أو القميص؟",
+     "a": "تُبيّن كل صفحة منتج المقاسات المتوفرة. وإن ساورك شك، أرسل لنا مقاسك وطولك عبر واتساب لنرشدك إلى المقاس الأنسب."
+    },
+    {
+     "q": "كيف أطلب عبر واتساب؟",
+     "a": "أضف منتجاتك إلى السلة ثم اضغط على «اطلب عبر واتساب». ستُفتح رسالة جاهزة للإرسال تتضمن ملخص طلبك، ثم نؤكد الطلب معك."
+    },
+    {
+     "q": "هل تقدمون علب هدايا مخصصة؟",
+     "a": "نعم. عطر أو عود أو ساعة أو مسبحة: نُعدّ علب هدايا حسب الطلب لكل المناسبات. أخبرنا بفكرتك وميزانيتك عبر واتساب."
+    },
+    {
+     "q": "ما هي أوقات العمل والعنوان؟",
+     "a": "راسلنا عبر واتساب على الرقم ‎+212 671501152‎ لمعرفة أوقات العمل والعنوان. كما يتوفر رابط الطريق على الموقع."
+    }
+   ]
+  },
+  "newsletter": {
+   "title": "ابقَ في أثر العطر",
+   "text": "تابع جديدنا وعروضنا الخاصة.",
+   "placeholder": "بريدك الإلكتروني",
+   "button": "اشترك",
+   "success": "شكرًا لك، تم تأكيد اشتراكك.",
+   "error": "البريد الإلكتروني غير صالح. حاول مرة أخرى.",
+   "consent": "يمكنك إلغاء الاشتراك في أي وقت."
+  },
+  "footer": {
+   "tagline": "عطور • عبايات • هدايا فاخرة",
+   "about": "متجر فاخر في المغرب: عطور أصلية وعبايات وقمصان وعود وعلب هدايا لكل المناسبات.",
+   "followUs": "تابعنا",
+   "contact": "تواصل معنا",
+   "legal": "الإشعار القانوني",
+   "terms": "الشروط العامة للبيع",
+   "privacy": "سياسة الخصوصية",
+   "copyright": "© 2026 بكة. جميع الحقوق محفوظة.",
+   "whatsapp": "واتساب",
+   "facebook": "فيسبوك",
+   "tiktok": "تيك توك",
+   "instagram": "إنستغرام",
+   "toTop": "للأعلى",
+   "hours": "أوقات العمل",
+   "address": "العنوان"
+  },
+  "whatsapp": {
+   "orderTemplate": "السلام عليكم فريق بكة، أرغب في تقديم طلب:\n\n{articles}\n\nالمجموع: {total}\n\nالاسم: {nom}\nالعنوان: {adresse}\n\nالمرجو تأكيد التوفر والتوصيل.",
+   "lineTemplate": "- {nom} × {quantite}: {prix}",
+   "generalMessage": "السلام عليكم فريق بكة، أرغب في الحصول على نصيحة لاختيار عطر.",
+   "notProvided": "غير محدد"
+  },
+  "admin": {
+   "title": "مساحة البائع",
+   "login": "تسجيل الدخول",
+   "logout": "تسجيل الخروج",
+   "password": "كلمة المرور",
+   "dashboard": "لوحة التحكم",
+   "products": "المنتجات",
+   "addProduct": "إضافة منتج",
+   "editProduct": "تعديل المنتج",
+   "deleteProduct": "حذف المنتج",
+   "confirmDelete": "هل أنت متأكد من حذف هذا المنتج؟",
+   "name": "الاسم",
+   "brand": "العلامة التجارية",
+   "category": "الفئة",
+   "price": "السعر (درهم)",
+   "size": "الحجم",
+   "gender": "الفئة",
+   "notes": "النفحات العطرية",
+   "description": "الوصف",
+   "image": "الصورة",
+   "featured": "مميز",
+   "stock": "المخزون",
+   "available": "متوفر",
+   "save": "حفظ",
+   "cancel": "إلغاء",
+   "saved": "تم حفظ التعديلات.",
+   "error": "حدث خطأ ما.",
+   "priceMissing": "يجب إدخال السعر",
+   "languageTab": "اللغة",
+   "required": "حقل إلزامي",
+   "orders": "الطلبات",
+   "settings": "الإعدادات"
+  },
+  "sound": {
+   "label": "الصوت",
+   "on": "تشغيل",
+   "off": "إيقاف"
+  },
+  "profile": {
+   "bg1": "جوهر",
+   "bg2": "أثر"
+  },
+  "defaults": {
+   "address": "المغرب",
+   "hours": "من الاثنين إلى السبت، 10:00 – 21:00"
+  },
+  "boutique": {
+   "title": "متجرنا",
+   "kicker": "زورونا"
+  },
+  "a11y": {
+   "canvas": "قوارير عطور بكة ثلاثية الأبعاد",
+   "home": "بكة، الرئيسية"
+  },
+  "legal": {
+   "mentions": "الإشعار القانوني: يستكمله المتجر (الاسم التجاري، العنوان، السجل التجاري، رقم التعريف الموحد للمقاولة ICE، وسيلة التواصل).",
+   "cgu": "الشروط العامة للبيع: يستكملها المتجر (الطلب عبر واتساب، الدفع، التوصيل، الإرجاع).",
+   "privacy": "سياسة الخصوصية: تُستكمل من طرف المتجر. البيانات المدخلة في الطلب لا تُستعمل إلا لمعالجة طلبك."
+  },
+  "units": {
+   "ml": "مل"
+  },
+  "concentration": {
+   "edp": "ماء عطر",
+   "extrait": "خلاصة العطر"
+  }
+ }
+};

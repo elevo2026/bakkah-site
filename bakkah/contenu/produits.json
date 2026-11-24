@@ -1,0 +1,1352 @@
+{
+ "currency": "DH",
+ "note": "Prix, genres, notes d'Ana Abiyedh/Philos Messenger, marques et contenances manquantes : valeurs PROVISOIRES autorisées par le client (à remplacer via l'admin). Les articles avec demo:true sont des exemples.",
+ "perfumes": [
+  {
+   "id": "officer",
+   "category": "perfumes",
+   "gender": "men",
+   "name": {
+    "fr": "Officer",
+    "en": "Officer",
+    "ar": "أوفيسر"
+   },
+   "brand": "Cyrus",
+   "size": "90 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "bergamote",
+      "citron",
+      "baies roses",
+      "chocolat",
+      "fruits"
+     ],
+     "en": [
+      "bergamot",
+      "lemon",
+      "pink berries",
+      "chocolate",
+      "fruits"
+     ],
+     "ar": [
+      "برغموت",
+      "ليمون",
+      "توت وردي",
+      "شوكولاتة",
+      "فواكه"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "lavande",
+      "cardamome",
+      "jasmin",
+      "ananas",
+      "lys"
+     ],
+     "en": [
+      "lavender",
+      "cardamom",
+      "jasmine",
+      "pineapple",
+      "lily"
+     ],
+     "ar": [
+      "لافندر",
+      "هيل",
+      "ياسمين",
+      "أناناس",
+      "زنبق"
+     ]
+    },
+    "base": {
+     "fr": [
+      "bois",
+      "ambre",
+      "fève tonka",
+      "mousse de chêne",
+      "musc"
+     ],
+     "en": [
+      "woods",
+      "amber",
+      "tonka bean",
+      "oakmoss",
+      "musk"
+     ],
+     "ar": [
+      "أخشاب",
+      "عنبر",
+      "فول التونكا",
+      "طحلب البلوط",
+      "مسك"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Un aromatique gourmand et racé : l'éclat des agrumes, la lavande veloutée, puis un fond ambré et boisé d'une belle présence.",
+    "en": "A refined, gourmand aromatic: bright citrus and velvety lavender settling into a warm, woody-amber base with real presence.",
+    "ar": "عطر من الفصيلة العطرية (أروماتيك) راقٍ بلمسة شهية: إشراقة الحمضيات ونعومة اللافندر، ثم قاعدة عنبرية خشبية دافئة بحضور لافت."
+   },
+   "colors": {
+    "primary": "#1E3FA8",
+    "secondary": "#000000"
+   },
+   "price": 380,
+   "featured": true,
+   "promoPrice": 320
+  },
+  {
+   "id": "asad-elixir",
+   "category": "perfumes",
+   "gender": "men",
+   "name": {
+    "fr": "Asad Elixir",
+    "en": "Asad Elixir",
+    "ar": "أسد إليكسير"
+   },
+   "brand": "Lattafa",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "pamplemousse",
+      "safran",
+      "baies roses"
+     ],
+     "en": [
+      "grapefruit",
+      "saffron",
+      "pink berries"
+     ],
+     "ar": [
+      "جريب فروت",
+      "زعفران",
+      "توت وردي"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "vanille",
+      "cèdre",
+      "tabac"
+     ],
+     "en": [
+      "vanilla",
+      "cedar",
+      "tobacco"
+     ],
+     "ar": [
+      "فانيليا",
+      "خشب الأرز",
+      "تبغ"
+     ]
+    },
+    "base": {
+     "fr": [
+      "ambre sec",
+      "cachemire",
+      "oliban (encens)",
+      "patchouli"
+     ],
+     "en": [
+      "dry amber",
+      "cashmere",
+      "frankincense",
+      "patchouli"
+     ],
+     "ar": [
+      "عنبر جاف",
+      "كشمير",
+      "لبان",
+      "باتشولي"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Le lion en version élixir : safran et tabac vanillé, puis un sillage d'ambre sec, d'encens et de patchouli, intense et solennel.",
+    "en": "The lion in elixir form: saffron and vanilla-tinged tobacco, then a trail of dry amber, incense and patchouli, intense and regal.",
+    "ar": "الأسد في صورة إكسير: زعفران وتبغ بلمسة فانيليا، يتبعهما أثر من العنبر الجاف واللبان والباتشولي، كثيف ومهيب."
+   },
+   "colors": {
+    "primary": "#3B2416",
+    "secondary": "#C9A24A"
+   },
+   "price": 420,
+   "featured": true
+  },
+  {
+   "id": "nudo-green-iris",
+   "category": "perfumes",
+   "gender": "women",
+   "name": {
+    "fr": "Nudo Green Iris",
+    "en": "Nudo Green Iris",
+    "ar": "نودو غرين آيريس"
+   },
+   "brand": "Fragrance World",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "mandarine",
+      "citron"
+     ],
+     "en": [
+      "mandarin",
+      "lemon"
+     ],
+     "ar": [
+      "يوسفي",
+      "ليمون"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "iris",
+      "violette"
+     ],
+     "en": [
+      "iris",
+      "violet"
+     ],
+     "ar": [
+      "سوسن",
+      "بنفسج"
+     ]
+    },
+    "base": {
+     "fr": [
+      "notes boisées",
+      "ambre",
+      "musc",
+      "vanille"
+     ],
+     "en": [
+      "woody notes",
+      "amber",
+      "musk",
+      "vanilla"
+     ],
+     "ar": [
+      "نفحات خشبية",
+      "عنبر",
+      "مسك",
+      "فانيليا"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Un iris poudré et lumineux, nuancé de violette et rafraîchi d'agrumes, qui s'adoucit en un fond boisé, musqué et vanillé. Élégant et délicat.",
+    "en": "A luminous, powdery iris with a touch of violet, freshened with citrus and softening into a woody, musky and vanilla base. Elegant and delicate.",
+    "ar": "سوسن مضيء وبودري بلمسة بنفسج، تنعشه الحمضيات، ثم يلين في قاعدة خشبية ومسكية بلمسة فانيليا. أنيق ورقيق."
+   },
+   "colors": {
+    "primary": "#0F5A3F",
+    "secondary": "#C9A24A"
+   },
+   "price": 350,
+   "featured": true
+  },
+  {
+   "id": "najdia",
+   "category": "perfumes",
+   "gender": "unisex",
+   "name": {
+    "fr": "Najdia",
+    "en": "Najdia",
+    "ar": "نجدية"
+   },
+   "brand": "Lattafa",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "lavande",
+      "pomme",
+      "agrumes"
+     ],
+     "en": [
+      "lavender",
+      "apple",
+      "citrus"
+     ],
+     "ar": [
+      "لافندر",
+      "تفاح",
+      "حمضيات"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "rose",
+      "cèdre",
+      "jasmin"
+     ],
+     "en": [
+      "rose",
+      "cedar",
+      "jasmine"
+     ],
+     "ar": [
+      "ورد",
+      "خشب الأرز",
+      "ياسمين"
+     ]
+    },
+    "base": {
+     "fr": [
+      "bois d'oud",
+      "ambre",
+      "musc"
+     ],
+     "en": [
+      "oud wood",
+      "amber",
+      "musk"
+     ],
+     "ar": [
+      "خشب العود",
+      "عنبر",
+      "مسك"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Une rose et un jasmin posés sur un oud ambré : fraîcheur fruitée à l'ouverture, puis une chaleur orientale douce et enveloppante.",
+    "en": "Rose and jasmine resting on amber-tinged oud: a fruity, fresh opening that gives way to a soft, enveloping oriental warmth.",
+    "ar": "ورد وياسمين على عود عنبري: افتتاحية منعشة بلمسة فاكهية، ثم دفء شرقي ناعم يلفّك."
+   },
+   "colors": {
+    "primary": "#6B3E26",
+    "secondary": "#E8A0A8"
+   },
+   "price": 320,
+   "featured": true
+  },
+  {
+   "id": "launo-intense-blue",
+   "category": "perfumes",
+   "gender": "men",
+   "name": {
+    "fr": "Launo Intense Blue",
+    "en": "Launo Intense Blue",
+    "ar": "لانو إنتنس بلو"
+   },
+   "brand": "Fragrance World",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "menthe",
+      "citron",
+      "pamplemousse"
+     ],
+     "en": [
+      "mint",
+      "lemon",
+      "grapefruit"
+     ],
+     "ar": [
+      "نعناع",
+      "ليمون",
+      "جريب فروت"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "notes marines",
+      "fleur d'oranger",
+      "lavande"
+     ],
+     "en": [
+      "marine notes",
+      "orange blossom",
+      "lavender"
+     ],
+     "ar": [
+      "نفحات بحرية",
+      "زهر البرتقال",
+      "لافندر"
+     ]
+    },
+    "base": {
+     "fr": [
+      "musc",
+      "bois",
+      "ambre"
+     ],
+     "en": [
+      "musk",
+      "woods",
+      "amber"
+     ],
+     "ar": [
+      "مسك",
+      "أخشاب",
+      "عنبر"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Un bleu vif et marin : menthe et agrumes glacés, lavande et fleur d'oranger, sur un fond de musc et de bois ambrés.",
+    "en": "A vivid marine blue: icy mint and citrus, lavender and orange blossom, resting on musky, amber-woody depths.",
+    "ar": "أزرق نابض ببحرٍ منعش: نعناع وحمضيات باردة ولافندر وزهر البرتقال، على قاعدة من المسك والخشب العنبري."
+   },
+   "colors": {
+    "primary": "#2F7FD0",
+    "secondary": "#C9A24A"
+   },
+   "price": 290,
+   "featured": true
+  },
+  {
+   "id": "ana-abiyedh",
+   "category": "perfumes",
+   "gender": "unisex",
+   "name": {
+    "fr": "Ana Abiyedh",
+    "en": "Ana Abiyedh",
+    "ar": "أنا الأبيض"
+   },
+   "brand": "Lattafa",
+   "size": "60 ml",
+   "concentration": "EDP",
+   "variants": [
+    {
+     "id": "white",
+     "name": {
+      "fr": "Blanc",
+      "en": "White",
+      "ar": "أبيض"
+     },
+     "price": 300,
+     "notes": {
+      "top": {
+       "fr": [
+        "bergamote",
+        "orange"
+       ],
+       "en": [
+        "bergamot",
+        "orange"
+       ],
+       "ar": [
+        "برغموت",
+        "برتقال"
+       ]
+      },
+      "heart": {
+       "fr": [
+        "vanille",
+        "poire"
+       ],
+       "en": [
+        "vanilla",
+        "pear"
+       ],
+       "ar": [
+        "فانيليا",
+        "كمثرى"
+       ]
+      },
+      "base": {
+       "fr": [
+        "musc",
+        "ambre"
+       ],
+       "en": [
+        "musk",
+        "amber"
+       ],
+       "ar": [
+        "مسك",
+        "عنبر"
+       ]
+      }
+     }
+    },
+    {
+     "id": "rouge",
+     "name": {
+      "fr": "Rouge",
+      "en": "Rouge",
+      "ar": "روج"
+     },
+     "price": 300,
+     "notes": {
+      "top": {
+       "fr": [
+        "poire nashi",
+        "kumquat",
+        "bergamote"
+       ],
+       "en": [
+        "nashi pear",
+        "kumquat",
+        "bergamot"
+       ],
+       "ar": [
+        "كمثرى ناشي",
+        "كمكوات",
+        "برغموت"
+       ]
+      },
+      "heart": {
+       "fr": [
+        "caramel",
+        "géranium"
+       ],
+       "en": [
+        "caramel",
+        "geranium"
+       ],
+       "ar": [
+        "كراميل",
+        "جيرانيوم"
+       ]
+      },
+      "base": {
+       "fr": [
+        "ambre gris",
+        "musc",
+        "mousse de chêne"
+       ],
+       "en": [
+        "ambergris",
+        "musk",
+        "oakmoss"
+       ],
+       "ar": [
+        "عنبر رمادي",
+        "مسك",
+        "طحلب البلوط"
+       ]
+      }
+     }
+    },
+    {
+     "id": "poudree",
+     "name": {
+      "fr": "Poudrée",
+      "en": "Poudrée",
+      "ar": "بودري"
+     },
+     "price": 300,
+     "notes": {
+      "top": {
+       "fr": [
+        "fleur d'oranger",
+        "jasmin",
+        "rose"
+       ],
+       "en": [
+        "orange blossom",
+        "jasmine",
+        "rose"
+       ],
+       "ar": [
+        "زهر البرتقال",
+        "ياسمين",
+        "ورد"
+       ]
+      },
+      "heart": {
+       "fr": [
+        "ambroxan",
+        "musc",
+        "notes poudrées"
+       ],
+       "en": [
+        "ambroxan",
+        "musk",
+        "powdery notes"
+       ],
+       "ar": [
+        "أمبروكسان",
+        "مسك",
+        "نفحات بودرية"
+       ]
+      },
+      "base": {
+       "fr": [
+        "vanille",
+        "musc"
+       ],
+       "en": [
+        "vanilla",
+        "musk"
+       ],
+       "ar": [
+        "فانيليا",
+        "مسك"
+       ]
+      }
+     }
+    }
+   ],
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "bergamote",
+      "orange"
+     ],
+     "en": [
+      "bergamot",
+      "orange"
+     ],
+     "ar": [
+      "برغموت",
+      "برتقال"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "vanille",
+      "poire"
+     ],
+     "en": [
+      "vanilla",
+      "pear"
+     ],
+     "ar": [
+      "فانيليا",
+      "كمثرى"
+     ]
+    },
+    "base": {
+     "fr": [
+      "musc",
+      "ambre"
+     ],
+     "en": [
+      "musk",
+      "amber"
+     ],
+     "ar": [
+      "مسك",
+      "عنبر"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Une signature Lattafa en trois versions, Blanc, Rouge et Poudrée, pour choisir son humeur : lumineuse, intense ou tendre. Les notes varient selon la version choisie.",
+    "en": "A Lattafa signature in three versions, White, Rouge and Poudrée, so you can choose your mood: luminous, intense or tender. The notes vary with the version you choose.",
+    "ar": "بصمة من لطافة (Lattafa) بثلاث نسخ: أبيض وروج وبودري، لتختار مزاجك بين الإشراق والكثافة والرقة. وتختلف النفحات بحسب النسخة المختارة."
+   },
+   "colors": {
+    "primary": "#C98A2B",
+    "secondary": "#8E1B1B"
+   },
+   "price": 300,
+   "featured": false
+  },
+  {
+   "id": "philos-messenger",
+   "category": "perfumes",
+   "gender": "unisex",
+   "name": {
+    "fr": "Philos Messenger",
+    "en": "Philos Messenger",
+    "ar": "فيلوس ميسنجر"
+   },
+   "brand": "Maison Alhambra",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "pamplemousse",
+      "bergamote",
+      "gingembre"
+     ],
+     "en": [
+      "grapefruit",
+      "bergamot",
+      "ginger"
+     ],
+     "ar": [
+      "جريب فروت",
+      "برغموت",
+      "زنجبيل"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "jasmin",
+      "magnolia",
+      "iris"
+     ],
+     "en": [
+      "jasmine",
+      "magnolia",
+      "iris"
+     ],
+     "ar": [
+      "ياسمين",
+      "ماغنوليا",
+      "سوسن"
+     ]
+    },
+    "base": {
+     "fr": [
+      "musc",
+      "ambre",
+      "cèdre",
+      "patchouli"
+     ],
+     "en": [
+      "musk",
+      "amber",
+      "cedar",
+      "patchouli"
+     ],
+     "ar": [
+      "مسك",
+      "عنبر",
+      "خشب الأرز",
+      "باتشولي"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Une eau de parfum fraîche et élégante : pamplemousse, bergamote et gingembre pétillants, un cœur floral de jasmin, de magnolia et d'iris, puis un fond de musc, d'ambre, de cèdre et de patchouli.",
+    "en": "A fresh, elegant eau de parfum: sparkling grapefruit, bergamot and ginger, a floral heart of jasmine, magnolia and iris, settling into musk, amber, cedar and patchouli.",
+    "ar": "ماء عطر منعش وأنيق: جريب فروت وبرغموت وزنجبيل، قلب زهري من الياسمين والماغنوليا والسوسن، وقاعدة من المسك والعنبر وخشب الأرز والباتشولي."
+   },
+   "colors": {
+    "primary": "#1F6B5C",
+    "secondary": "#F5EFE0"
+   },
+   "price": 330,
+   "featured": false
+  },
+  {
+   "id": "ateeq",
+   "category": "perfumes",
+   "gender": "unisex",
+   "name": {
+    "fr": "Ateeq",
+    "en": "Ateeq",
+    "ar": "عتيق"
+   },
+   "brand": "Nusuk",
+   "size": "100 ml",
+   "concentration": "Extrait de parfum",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "miel",
+      "cannelle",
+      "ambre",
+      "pamplemousse",
+      "citron vert"
+     ],
+     "en": [
+      "honey",
+      "cinnamon",
+      "amber",
+      "grapefruit",
+      "lime"
+     ],
+     "ar": [
+      "عسل",
+      "قرفة",
+      "عنبر",
+      "جريب فروت",
+      "ليمون أخضر"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "tabac",
+      "lavande",
+      "jasmin"
+     ],
+     "en": [
+      "tobacco",
+      "lavender",
+      "jasmine"
+     ],
+     "ar": [
+      "تبغ",
+      "لافندر",
+      "ياسمين"
+     ]
+    },
+    "base": {
+     "fr": [
+      "fève tonka",
+      "cèdre",
+      "coumarine",
+      "orchidée vanille",
+      "musc"
+     ],
+     "en": [
+      "tonka bean",
+      "cedar",
+      "coumarin",
+      "vanilla orchid",
+      "musk"
+     ],
+     "ar": [
+      "فول التونكا",
+      "خشب الأرز",
+      "كومارين",
+      "أوركيد الفانيليا",
+      "مسك"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Un extrait de parfum chaleureux et addictif : miel, cannelle et agrumes, un cœur de tabac, de lavande et de jasmin, puis un fond de fève tonka, de vanille et de musc d'une grande tenue.",
+    "en": "A warm, addictive extrait de parfum: honey, cinnamon and citrus, a heart of tobacco, lavender and jasmine, settling into tonka bean, vanilla and musk with great staying power.",
+    "ar": "خلاصة عطرية دافئة وآسرة: عسل وقرفة وحمضيات، قلب من التبغ واللافندر والياسمين، ثم قاعدة من فول التونكا والفانيليا والمسك تدوم طويلًا."
+   },
+   "colors": {
+    "primary": "#8A4B3A",
+    "secondary": "#E9D8C4"
+   },
+   "price": 350
+  },
+  {
+   "id": "sehr-lattafa",
+   "category": "perfumes",
+   "gender": "unisex",
+   "name": {
+    "fr": "Sehr Lattafa",
+    "en": "Sehr Lattafa",
+    "ar": "سحر لطافة"
+   },
+   "brand": "Lattafa",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "amande amère",
+      "cannelle"
+     ],
+     "en": [
+      "bitter almond",
+      "cinnamon"
+     ],
+     "ar": [
+      "لوز مر",
+      "قرفة"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "jasmin",
+      "Pomarose",
+      "Akigalawood"
+     ],
+     "en": [
+      "jasmine",
+      "Pomarose",
+      "Akigalawood"
+     ],
+     "ar": [
+      "ياسمين",
+      "بوماروز",
+      "أكيغالاوود"
+     ]
+    },
+    "base": {
+     "fr": [
+      "vanille absolue",
+      "ambre",
+      "fève tonka"
+     ],
+     "en": [
+      "vanilla absolute",
+      "amber",
+      "tonka bean"
+     ],
+     "ar": [
+      "فانيليا أبسولو",
+      "عنبر",
+      "فول التونكا"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Un oriental gourmand et envoûtant : amande amère et cannelle à l'ouverture, un cœur de jasmin, de Pomarose et d'Akigalawood, puis un fond de vanille absolue, d'ambre et de fève tonka.",
+    "en": "A bewitching, gourmand oriental: bitter almond and cinnamon in the opening, a heart of jasmine, Pomarose and Akigalawood, and a base of vanilla absolute, amber and tonka bean.",
+    "ar": "عطر شرقي شهي وآسر: لوز مر وقرفة في الافتتاحية، قلب من الياسمين والبوماروز والأكيغالاوود، وقاعدة من الفانيليا أبسولو والعنبر وفول التونكا."
+   },
+   "colors": {
+    "primary": "#121212",
+    "secondary": "#C9A24A"
+   },
+   "price": 380
+  },
+  {
+   "id": "glacier-bella",
+   "category": "perfumes",
+   "gender": "women",
+   "name": {
+    "fr": "Glacier Bella",
+    "en": "Glacier Bella",
+    "ar": "غلاسيير بيلا"
+   },
+   "brand": "Maison Alhambra",
+   "size": "100 ml",
+   "concentration": "EDP",
+   "notesToConfirm": false,
+   "notes": {
+    "top": {
+     "fr": [
+      "poire",
+      "mandarine"
+     ],
+     "en": [
+      "pear",
+      "mandarin"
+     ],
+     "ar": [
+      "كمثرى",
+      "يوسفي"
+     ]
+    },
+    "heart": {
+     "fr": [
+      "rose",
+      "fleur d'oranger"
+     ],
+     "en": [
+      "rose",
+      "orange blossom"
+     ],
+     "ar": [
+      "ورد",
+      "زهر البرتقال"
+     ]
+    },
+    "base": {
+     "fr": [
+      "vanille",
+      "ambre",
+      "musc"
+     ],
+     "en": [
+      "vanilla",
+      "amber",
+      "musk"
+     ],
+     "ar": [
+      "فانيليا",
+      "عنبر",
+      "مسك"
+     ]
+    }
+   },
+   "description": {
+    "fr": "Une rose gourmande et lumineuse : poire et mandarine pétillantes, fleur d'oranger, puis un fond de vanille ambrée et de musc.",
+    "en": "A luminous, gourmand rose: sparkling pear and mandarin, orange blossom, then a base of amber vanilla and musk.",
+    "ar": "ورد شهي ومشرق: كمثرى ويوسفي منعشان، زهر البرتقال، ثم قاعدة من الفانيليا العنبرية والمسك."
+   },
+   "colors": {
+    "primary": "#7A1020",
+    "secondary": "#A9D3C2"
+   },
+   "price": 300,
+   "provisional": true,
+   "featured": true
+  }
+ ],
+ "items": [
+  {
+   "id": "demo-pack-prestige",
+   "category": "packs",
+   "demo": true,
+   "name": {
+    "fr": "Coffret Prestige",
+    "en": "Prestige Gift Set",
+    "ar": "علبة بريستيج"
+   },
+   "description": {
+    "fr": "Un parfum et son oud, présentés dans un écrin noir et or.",
+    "en": "A perfume and its oud, presented in a black and gold case.",
+    "ar": "عطر مع عود، في علبة أنيقة بالأسود والذهبي."
+   },
+   "price": 1200,
+   "image": "assets/img/articles/coffret-prestige.svg"
+  },
+  {
+   "id": "demo-pack-couple",
+   "category": "packs",
+   "demo": true,
+   "name": {
+    "fr": "Coffret Duo",
+    "en": "Duo Gift Set",
+    "ar": "علبة الثنائي"
+   },
+   "description": {
+    "fr": "Deux fragrances assorties, pour offrir ou se faire plaisir.",
+    "en": "Two matching fragrances, to give or to treasure.",
+    "ar": "عطران متناسقان، للإهداء أو للاقتناء."
+   },
+   "price": 850,
+   "image": "assets/img/articles/coffret-duo.svg"
+  },
+  {
+   "id": "demo-abaya-noire",
+   "category": "abayas",
+   "subcategory": "abayas",
+   "demo": true,
+   "name": {
+    "fr": "Abaya noire brodée or",
+    "en": "Black abaya with gold embroidery",
+    "ar": "عباية سوداء بتطريز ذهبي"
+   },
+   "description": {
+    "fr": "Coupe fluide et broderie dorée délicate.",
+    "en": "A flowing cut with delicate gold embroidery.",
+    "ar": "قصّة انسيابية وتطريز ذهبي رقيق."
+   },
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "price": 690,
+   "promoPrice": 590,
+   "image": "assets/img/articles/abaya-noire.svg"
+  },
+  {
+   "id": "demo-abaya-taupe",
+   "category": "abayas",
+   "subcategory": "abayas",
+   "demo": true,
+   "name": {
+    "fr": "Abaya taupe satinée",
+    "en": "Satin taupe abaya",
+    "ar": "عباية ساتان بلون التاوب"
+   },
+   "description": {
+    "fr": "Un tombé soyeux, sobre et élégant.",
+    "en": "A silky drape, understated and elegant.",
+    "ar": "سقوط حريري بتصميم هادئ وأنيق."
+   },
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "price": 550,
+   "image": "assets/img/articles/abaya-taupe.svg"
+  },
+  {
+   "id": "demo-voile-soie",
+   "category": "abayas",
+   "subcategory": "veils",
+   "demo": true,
+   "name": {
+    "fr": "Voile en mousseline",
+    "en": "Chiffon veil",
+    "ar": "حجاب شيفون"
+   },
+   "description": {
+    "fr": "Léger, doux et facile à draper.",
+    "en": "Light, soft and easy to drape.",
+    "ar": "خفيف وناعم وسهل التنسيق."
+   },
+   "colors": [
+    "noir",
+    "ivoire",
+    "beige"
+   ],
+   "price": 120,
+   "image": "assets/img/articles/voile-soie.svg"
+  },
+  {
+   "id": "demo-qamis-blanc",
+   "category": "qamis",
+   "demo": true,
+   "name": {
+    "fr": "Qamis blanc classique",
+    "en": "Classic white qamis",
+    "ar": "قميص رجالي أبيض كلاسيكي"
+   },
+   "description": {
+    "fr": "Une coupe nette et un tissu confortable.",
+    "en": "A clean cut in a comfortable fabric.",
+    "ar": "قصّة أنيقة وقماش مريح."
+   },
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+   ],
+   "price": 350,
+   "image": "assets/img/articles/qamis-blanc.svg"
+  },
+  {
+   "id": "demo-qamis-noir",
+   "category": "qamis",
+   "demo": true,
+   "name": {
+    "fr": "Qamis noir col brodé",
+    "en": "Black qamis with embroidered collar",
+    "ar": "قميص رجالي أسود بياقة مطرزة"
+   },
+   "description": {
+    "fr": "Sobre, avec un détail brodé discret.",
+    "en": "Understated, with a discreet embroidered detail.",
+    "ar": "تصميم هادئ بتطريز خفيف على الياقة."
+   },
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+   ],
+   "price": 420,
+   "image": "assets/img/articles/qamis-noir.svg"
+  },
+  {
+   "id": "demo-montre-or",
+   "category": "watches",
+   "demo": true,
+   "name": {
+    "fr": "Montre dorée cadran noir",
+    "en": "Gold watch with black dial",
+    "ar": "ساعة ذهبية بواجهة سوداء"
+   },
+   "description": {
+    "fr": "Un classique noir et or, à offrir ou à porter.",
+    "en": "A black and gold classic, to give or to wear.",
+    "ar": "ساعة كلاسيكية بالأسود والذهبي، للإهداء أو للارتداء."
+   },
+   "price": 890,
+   "promoPrice": 690,
+   "image": "assets/img/articles/montre-or.svg"
+  },
+  {
+   "id": "demo-montre-argent",
+   "category": "watches",
+   "demo": true,
+   "name": {
+    "fr": "Montre argentée bracelet acier",
+    "en": "Silver watch with steel bracelet",
+    "ar": "ساعة فضية بسوار فولاذي"
+   },
+   "description": {
+    "fr": "Épurée et intemporelle.",
+    "en": "Clean and timeless.",
+    "ar": "تصميم بسيط وخالد."
+   },
+   "price": 650,
+   "image": "assets/img/articles/montre-argent.svg"
+  },
+  {
+   "id": "demo-tapis-velours",
+   "category": "prayer",
+   "subcategory": "prayerMats",
+   "demo": true,
+   "name": {
+    "fr": "Tapis de prière en velours",
+    "en": "Velvet prayer mat",
+    "ar": "سجادة صلاة مخملية"
+   },
+   "description": {
+    "fr": "Épais et doux, aux motifs dorés.",
+    "en": "Thick and soft, with golden patterns.",
+    "ar": "سميكة وناعمة بزخارف ذهبية."
+   },
+   "price": 280,
+   "image": "assets/img/articles/tapis-velours.svg"
+  },
+  {
+   "id": "demo-tasbih-bois",
+   "category": "prayer",
+   "subcategory": "tasbih",
+   "demo": true,
+   "name": {
+    "fr": "Tasbih en bois précieux",
+    "en": "Precious wood tasbih",
+    "ar": "مسبحة من خشب نفيس"
+   },
+   "description": {
+    "fr": "33 perles polies, gland soyeux.",
+    "en": "33 polished beads with a silky tassel.",
+    "ar": "33 حبة مصقولة وشرّابة حريرية."
+   },
+   "price": 120,
+   "image": "assets/img/articles/tasbih-bois.svg"
+  },
+  {
+   "id": "demo-tasbih-cristal",
+   "category": "prayer",
+   "subcategory": "tasbih",
+   "demo": true,
+   "name": {
+    "fr": "Tasbih en cristal",
+    "en": "Crystal tasbih",
+    "ar": "مسبحة كريستال"
+   },
+   "description": {
+    "fr": "Des perles translucides, un cadeau délicat.",
+    "en": "Translucent beads, a delicate gift.",
+    "ar": "حبات شفافة، هدية رقيقة."
+   },
+   "price": 180,
+   "image": "assets/img/articles/tasbih-cristal.svg"
+  },
+  {
+   "id": "demo-oud-cambodge",
+   "category": "oud",
+   "subcategory": "oudScents",
+   "demo": true,
+   "name": {
+    "fr": "Oud Cambodge",
+    "en": "Cambodian Oud",
+    "ar": "عود كمبودي"
+   },
+   "description": {
+    "fr": "Un oud profond, boisé et chaleureux.",
+    "en": "A deep, woody and warm oud.",
+    "ar": "عود عميق خشبي دافئ."
+   },
+   "scents": [
+    {
+     "fr": "Oud boisé",
+     "en": "Woody oud",
+     "ar": "عود خشبي",
+     "price": 280
+    },
+    {
+     "fr": "Oud ambré",
+     "en": "Amber oud",
+     "ar": "عود عنبري",
+     "price": 300
+    }
+   ],
+   "price": 280,
+   "image": "assets/img/articles/oud-cambodge.svg"
+  },
+  {
+   "id": "demo-bakhour-rose",
+   "category": "oud",
+   "subcategory": "bakhour",
+   "demo": true,
+   "name": {
+    "fr": "Bakhour aux senteurs variées",
+    "en": "Bakhoor in assorted scents",
+    "ar": "بخور بروائح متنوعة"
+   },
+   "description": {
+    "fr": "Plusieurs senteurs au choix pour parfumer la maison.",
+    "en": "Several scents to choose from, to perfume your home.",
+    "ar": "عدة روائح للاختيار لتعطير البيت."
+   },
+   "scents": [
+    {
+     "fr": "Rose",
+     "en": "Rose",
+     "ar": "ورد",
+     "price": 70
+    },
+    {
+     "fr": "Musc",
+     "en": "Musk",
+     "ar": "مسك",
+     "price": 80
+    },
+    {
+     "fr": "Ambre",
+     "en": "Amber",
+     "ar": "عنبر",
+     "price": 90
+    },
+    {
+     "fr": "Oud",
+     "en": "Oud",
+     "ar": "عود",
+     "price": 150
+    }
+   ],
+   "price": 70,
+   "image": "assets/img/articles/bakhour-rose.svg"
+  },
+  {
+   "id": "demo-bakhouriya-pliable",
+   "category": "oud",
+   "subcategory": "incenseBurners",
+   "demo": true,
+   "name": {
+    "fr": "Brûle-encens (bakhouriya) avec bouton pliable",
+    "en": "Incense burner (bakhoor burner) with folding button",
+    "ar": "مبخرة بزر قابل للطي"
+   },
+   "description": {
+    "fr": "Un brûle-encens compact : son bouton se plie pour un rangement facile.",
+    "en": "A compact incense burner with a folding button, easy to store.",
+    "ar": "مبخرة صغيرة الحجم بزر يُطوى لسهولة التخزين."
+   },
+   "foldableButton": true,
+   "price": 250,
+   "image": "assets/img/articles/bakhouriya-pliable.svg"
+  },
+  {
+   "id": "demo-promo-duo-parfum",
+   "category": "promos",
+   "demo": true,
+   "name": {
+    "fr": "Offre : parfum + bakhour",
+    "en": "Offer: perfume + bakhoor",
+    "ar": "عرض: عطر + بخور"
+   },
+   "description": {
+    "fr": "Un parfum et un bakhour à prix réduit.",
+    "en": "A perfume and a bakhoor at a reduced price.",
+    "ar": "عطر وبخور بسعر مخفّض."
+   },
+   "price": 520,
+   "oldPrice": null,
+   "promoPrice": 450,
+   "image": "assets/img/articles/offre-parfum-bakhour.svg"
+  },
+  {
+   "id": "demo-promo-tasbih-tapis",
+   "category": "promos",
+   "demo": true,
+   "name": {
+    "fr": "Offre : tapis de prière + tasbih",
+    "en": "Offer: prayer mat + tasbih",
+    "ar": "عرض: سجادة صلاة + مسبحة"
+   },
+   "description": {
+    "fr": "Un ensemble de prière, idéal pour offrir.",
+    "en": "A prayer set, ideal as a gift.",
+    "ar": "طقم صلاة مثالي للإهداء."
+   },
+   "price": 480,
+   "oldPrice": null,
+   "image": "assets/img/articles/offre-tasbih-tapis.svg",
+   "promoPrice": 400
+  }
+ ]
+}
