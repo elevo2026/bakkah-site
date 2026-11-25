@@ -7,7 +7,8 @@ Ouvrez **votre-site/admin.html** (sur téléphone ou ordinateur). La première f
 - **+ Nouvel article** : nom et description en **3 langues** (FR / EN / AR ; un champ EN ou AR vide reprend le français), catégorie, marque, contenance, prix, photos, notes olfactives en 3 langues. **Prix vide = « Prix sur demande »** sur le site et dans le message WhatsApp. Sans photo, un visuel or & noir est affiché. La case « Article d'exemple » affiche le badge « Exemple » : décochez-la (ou supprimez l'article) pour vos vrais produits.
 - **Variantes** : taille (S, M, L…), senteur, contenance… Une variante par ligne : `français | anglais | arabe | prix` (tout sauf le français est facultatif), ex. `100 ml | 100 ml | 100 مل | 129`.
 - **Prix promo** : remplissez-le (ou un % de réduction) : le prix barré et l'étiquette -% apparaissent, et l'article entre dans « Promos ».
-- **Disponible** : décochez pour marquer un article indisponible. **Stock** : limite les quantités commandables.
+- **Visible sur le site** : case à cocher sur chaque ligne de la liste (ou dans la fiche). Décochée = l'article est masqué partout sur la boutique (catalogue, recherche, promos, carrousel 3D) : pratique pour un article pas encore en vente. Filtre « Tous / Visibles / Masqués » et boutons « Tout afficher / Tout masquer » (s'appliquent à la liste affichée : filtrez d'abord par catégorie). Par défaut tout est visible. **Attention** : « masqué » cache seulement l'article sur la boutique ; ce n'est pas une protection de données confidentielles (les informations restent dans la base et peuvent être lues techniquement). Ne saisissez jamais de données secrètes dans une fiche article. Si vous masquez TOUS les articles, le site affiche « Nouveautés bientôt disponibles » (une confirmation vous est demandée).
+- **Disponible** (différent de Visible) : décochez pour marquer un article indisponible. **Stock** : limite les quantités commandables.
 - Flèches ↑ ↓ : ordre d'affichage.
 
 **Catégories** — renommer (FR / EN / AR), réordonner, masquer, ajouter. « Promos » se remplit toute seule. Pour les parfums, les filtres Homme / Femme / Mixte sont automatiques.
@@ -34,3 +35,11 @@ Le client choisit sa langue (AR / EN / FR) en haut du site, remplit son panier e
 
 ## Valeurs provisoires (version 3)
 Les **prix**, les notes de Glacier Bella, l'adresse (« Maroc »), les horaires (« Lun–Sam 10h–21h »), les liens Avis Google / Itinéraire et les **illustrations** des articles hors parfums sont **provisoires** : remplacez-les dans l'administration (Articles, Liens & contact, Logo & photos, Textes & FAQ). Seuls les liens commençant par https://, http://, tel: ou mailto: sont acceptés.
+
+## Accéder à l'espace vendeur
+Depuis la boutique, aucun bouton ne mène à l'espace vendeur (c'est voulu, les clients ne le voient pas). Trois façons d'y entrer :
+- **5 appuis rapides** (en moins de 3 secondes) sur le **logo BAKKAH du pied de page** ;
+- ou **appui long de 3 secondes** sur ce même logo (mobile ou souris) ;
+- ou, sur ordinateur, le raccourci **Ctrl + Maj + B** (⌘ + Maj + B sur Mac).
+
+Attention : cette « porte secrète » n'est pas une sécurité. L'espace vendeur reste protégé par son mot de passe, qu'il ne faut jamais partager.

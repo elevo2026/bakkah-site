@@ -3,6 +3,8 @@
 -- A coller dans Supabase -> SQL Editor -> Run (NON exécuté pour l'instant).
 -- Toutes les données sont stockées en JSON (colonne "data") : ajouter un champ
 -- dans l'espace vendeur ne demande aucune modification de la base.
+-- Ex. : le champ "visible" (booléen, dans data des produits ; absent = visible)
+-- masque un article de la boutique. Aucune migration nécessaire.
 -- =========================================================
 
 -- Réglages du site (une seule ligne, id = 1) : textes, liens, WhatsApp, devise, FAQ, images...

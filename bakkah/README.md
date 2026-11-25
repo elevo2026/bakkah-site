@@ -62,3 +62,6 @@ Prix et stocks réels, URL exacte de la page Facebook, lien Avis Google et Itin�
 
 ## Version 3 (valeurs provisoires)
 Prix DH provisoires sur tous les articles (promos : Officer, Abaya noire, Montre dorée, Offre parfum + bakhour), genres des parfums, notes provisoires Ana Abiyedh/Philos, illustrations SVG originales (`assets/img/articles/`, script `contenu/generer_images.py`), liens filtrés (https/http/tel/mailto), newsletter anti-abus (honeypot + délai 3 s + contrainte SQL), correctifs HUD/slogan/cibles tactiles. Tout est remplaçable via admin.html.
+
+## Porte secrète vers l'espace vendeur
+Aucun lien vers `admin.html` dans la boutique. Accès caché (js/main.js, élément `#footLogo` du pied de page) : 5 appuis en moins de 3 s, ou appui long 3 s, ou Ctrl/⌘+Maj+B. Redirection relative (`admin.html`). `admin.html` porte `noindex, nofollow`. Ce n'est pas une sécurité : l'admin reste protégé par mot de passe.

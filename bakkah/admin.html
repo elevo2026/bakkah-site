@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>BAKKAH · Espace vendeur</title>
+<meta name="robots" content="noindex, nofollow">
+<title>BAKKAH · Seller area</title>
 <link rel="icon" href="assets/img/favicon-64.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,12 +48,13 @@ input[type=color]{width:56px;height:42px;border:1px solid var(--line);border-rad
 @media(max-width:640px){.g2,.g3{grid-template-columns:1fr}}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .grow{flex:1;min-width:140px}
-.item{display:grid;grid-template-columns:56px 1fr auto;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:10px;margin-bottom:8px}
-.item.off{opacity:.55}
+.item{display:grid;grid-template-columns:44px 56px 1fr auto;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:10px;margin-bottom:8px}
+.item.off{opacity:.55}.item.hid{opacity:.5;background:repeating-linear-gradient(135deg,var(--panel),var(--panel) 8px,#1a1a1a 8px,#1a1a1a 16px)}.pill.hidp{background:#2a2a2a;color:#ccc;border-color:#555}
+.vis{display:flex;align-items:center;justify-content:center;width:44px;height:44px;cursor:pointer}.vis input{width:26px;height:26px;accent-color:var(--gold);cursor:pointer}.seg{display:flex;gap:4px;flex-wrap:wrap}.vbar{gap:6px}
 .thumb{width:56px;height:72px;border-radius:6px;object-fit:cover;background:#16120a}
 .item h3{font-size:15px;font-weight:600;line-height:1.3}
 .meta{font-size:12.5px;color:var(--muted)}
-.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;margin-right:4px;border:1px solid var(--line)}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;margin-inline-end:4px;border:1px solid var(--line)}
 .pill.promo{background:#3a1d17;color:#ff9b88;border-color:#5a2b22}.pill.star{background:#3a3010;color:var(--gold2);border-color:#5a4a14}.pill.no{background:#331612;color:var(--danger)}
 .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
 .ib{width:38px;height:38px;border-radius:8px;border:1px solid var(--line);display:grid;place-items:center;background:var(--panel2)}
@@ -66,41 +67,56 @@ dialog::backdrop{background:rgba(0,0,0,.7)}
 .dlg{padding:18px}
 .photos{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
 .ph{position:relative}.ph img{width:80px;height:100px;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:#16120a}
-.ph button{position:absolute;top:-6px;right:-6px;width:24px;height:24px;border-radius:50%;background:var(--danger);color:#fff;font-size:14px}
+.ph button{position:absolute;top:-6px;inset-inline-end:-6px;width:24px;height:24px;border-radius:50%;background:var(--danger);color:#fff;font-size:14px}
 .imgrow{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:start;margin-bottom:12px}
 .imgrow img{width:90px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:#000}
 #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--gold);color:#111;padding:10px 18px;border-radius:99px;font-weight:600;z-index:99;opacity:0;pointer-events:none;transition:opacity .25s}
 #toast.show{opacity:1}#toast.err{background:var(--danger);color:#fff}
 .login{max-width:380px;margin:12vh auto;text-align:center}
 .login img{width:110px;height:110px;border-radius:50%;margin-bottom:12px}
-.tbl{width:100%;border-collapse:collapse;font-size:14px}.tbl td,.tbl th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}.tbl input{min-height:36px;padding:6px 8px}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}.tbl td,.tbl th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:start}.tbl input{min-height:36px;padding:6px 8px}
 details.tgrp{margin-top:8px}details.tgrp>summary{list-style:revert}.fgroup{margin-top:18px;font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:6px}
+label.lc{margin:0;font-size:14px;color:var(--ink)}
+.tblw{overflow-x:auto}
+code{unicode-bidi:isolate;direction:ltr;display:inline-block}
+input[type=url],input[type=email],input[type=number],input[type=password]{direction:ltr;text-align:start}
+[dir=rtl] input[type=url],[dir=rtl] input[type=email],[dir=rtl] input[type=number],[dir=rtl] input[type=password]{text-align:right}
+[dir=rtl] label,[dir=rtl] .bar small,[dir=rtl] .fgroup{letter-spacing:0;text-transform:none}
+[dir=rtl] .bar small{font-size:11px}
+.lsw{display:inline-flex;gap:4px;flex:none}
+.lsw button{min-width:38px;height:30px;padding:0 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted);font:600 12px Inter,sans-serif}
+.lsw button[aria-pressed=true]{background:var(--gold);color:#111;border-color:var(--gold)}
+.loginlang{text-align:end;padding-top:14px}
+.bar{min-width:0}.bar h1{min-width:0}
+@media(max-width:640px){.bar{gap:6px;flex-wrap:wrap;height:auto;padding:8px 0}.bar .btn-sm{height:30px;padding:0 10px;font-size:12px}.bar h1{font-size:19px;flex:1 1 90px}.item{grid-template-columns:44px 48px 1fr;}.vis{width:44px;height:44px}.vis input{width:28px;height:28px}.vbar .btn-sm,.seg .btn-sm{height:40px;min-height:40px}.item .acts{grid-column:1/-1;justify-content:flex-start}.thumb{width:48px;height:62px}.btn{white-space:normal;min-height:42px;height:auto;padding-top:6px;padding-bottom:6px}.dlg{padding:14px}}
 </style>
 </head>
 <body>
 <div id="login" class="wrap" hidden>
+  <div class="loginlang"><div class="lsw" role="group"><button type="button" data-lang="ar">AR</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div></div>
   <div class="login card">
     <img src="assets/img/logo.jpg" alt="BAKKAH">
-    <h1 class="serif" style="font-size:28px">Espace vendeur</h1>
+    <h1 class="serif" style="font-size:28px" data-tx="title"></h1>
     <p class="hint" id="loginHint"></p>
     <form id="loginForm">
-      <div id="emailRow" hidden><label for="lEmail">E-mail</label><input id="lEmail" type="email" autocomplete="username"></div>
-      <label for="lPw" id="lPwLabel">Mot de passe</label><input id="lPw" type="password" autocomplete="current-password">
-      <div id="pw2Row" hidden><label for="lPw2">Confirmer le mot de passe</label><input id="lPw2" type="password" autocomplete="new-password"></div>
+      <div id="emailRow" hidden><label for="lEmail" data-tx="email"></label><input id="lEmail" type="email" autocomplete="username"></div>
+      <label for="lPw" id="lPwLabel" data-tx="pw"></label><input id="lPw" type="password" autocomplete="current-password">
+      <div id="pw2Row" hidden><label for="lPw2" data-tx="pw2"></label><input id="lPw2" type="password" autocomplete="new-password"></div>
       <p id="lErr" class="hint" style="color:var(--danger);margin-top:8px"></p>
-      <button class="btn btn-gold" style="width:100%;margin-top:8px" id="lBtn">Entrer</button>
+      <button class="btn btn-gold" style="width:100%;margin-top:8px" id="lBtn"></button>
     </form>
   </div>
 </div>
 
 <div id="app" hidden>
   <header><div class="wrap bar">
-    <img src="assets/img/logo.jpg" alt=""><h1 class="serif">BAKKAH<small>Espace vendeur</small></h1>
+    <img src="assets/img/logo.jpg" alt=""><h1 class="serif">BAKKAH<small data-tx="title"></small></h1>
     <span class="mode" id="modeBadge"></span>
-    <a class="btn btn-line btn-sm" href="index.html" target="_blank" rel="noopener">Voir le site</a>
-    <button class="btn btn-line btn-sm" id="logout">Sortir</button>
+    <div class="lsw" role="group"><button type="button" data-lang="ar">AR</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div>
+    <a class="btn btn-line btn-sm" href="index.html" target="_blank" rel="noopener" data-tx="site"></a>
+    <button class="btn btn-line btn-sm" id="logout" data-tx="out"></button>
   </div></header>
-  <div class="demo" id="demoBar"><div class="wrap">Mode local : les modifications sont enregistrées dans <b>ce navigateur</b> uniquement. Pour qu'elles soient visibles par tous vos clients, branchez Supabase (voir README).</div></div>
+  <div class="demo" id="demoBar"><div class="wrap" id="demoMsg"></div></div>
   <main class="wrap">
     <div class="tabs" role="tablist" id="tabs"></div>
     <section id="view"></section>
@@ -119,40 +135,206 @@ if (window.SITE_CONFIG && window.SITE_CONFIG.supabaseUrl) document.write('<scrip
 <script>
 (function(){
 "use strict";
+/* ---------- Traductions de l'interface admin (le CONTENU saisi reste tel quel) ---------- */
+const TR = {
+fr:{
+ title:"Espace vendeur", site:"Voir le site", out:"Sortir", modeLocal:"Mode local", langLbl:"Langue",
+ demo:"Mode local : les modifications sont enregistrées dans <b>ce navigateur</b> uniquement. Pour qu'elles soient visibles par tous vos clients, branchez Supabase (voir README).",
+ lhLive:"Connectez-vous avec le compte créé dans Supabase.", lhFirst:"Première visite : choisissez le mot de passe de l'espace vendeur (6 caractères minimum).", lhPw:"Entrez votre mot de passe.",
+ email:"E-mail", pw:"Mot de passe", pw2:"Confirmer le mot de passe", enter:"Entrer", create:"Créer le mot de passe",
+ pwMin:"6 caractères minimum.", pwDiff:"Les deux mots de passe sont différents.", err:"Erreur",
+ t_articles:"Articles", t_categories:"Catégories", t_promos:"Promos", t_vedettes:"Parfums vedettes 3D", t_textes:"Textes & FAQ", t_images:"Logo & photos", t_liens:"Liens & contact", t_donnees:"Données & sécurité",
+ onRequest:"Prix sur demande", onRequestLc:"sur demande",
+ search:"Rechercher un article", allCats:"Toutes catégories", newP:"+ Nouvel article", count:"{n} article(s). Les flèches changent l'ordre d'affichage.", none:"Aucun article.",
+ star:"Carrousel 3D", unavail:"Indisponible", example:"Exemple (démo)", up:"Monter", down:"Descendre", edit:"Modifier",
+ newTitle:"Nouvel article", editTitle:"Modifier l'article", name:"Nom", cat:"Catégorie", genre:"Genre (parfums)", brand:"Marque", cont:"Contenance (ex. 100 ml)", conc:"Concentration (ex. EDP)",
+ demoLbl:"Article d'exemple (badge « Exemple »)", badge:"Étiquette (ex. Nouveau)", price:"Prix", priceEmpty:"vide = « Prix sur demande »", promo:"Prix promo (vide = pas de promo)", pct:"ou % de réduction", pctPh:"ex. 20",
+ vlab:"Type de variante (Taille, Senteur…)", stock:"Stock (vide = illimité)",
+ vars:"Variantes : une par ligne au format <code>français | anglais | arabe | prix</code> (anglais, arabe et prix facultatifs ; ex. <code>100 ml | 100 ml | 100 مل | 129</code>)",
+ desc:"Description", photos:"Photos (la 1re est la principale ; sans photo, un visuel or & noir est affiché)", addPh:"+ Ajouter des photos", urlPh:"ou coller l'adresse d'une image", add:"Ajouter",
+ carGrp:"Carrousel 3D et couleurs", featLbl:"Mettre ce parfum en vedette dans le carrousel 3D (6 recommandés)", c1:"Couleur primaire", c2:"Couleur secondaire",
+ notesGrp:"Notes olfactives", nconf:"Notes à confirmer (affiche « Notes à confirmer » au lieu des notes)", nTete:"Notes de tête", nCoeur:"Notes de cœur", nFond:"Notes de fond",
+ dispo:"Disponible à la vente", visLbl:"Visible sur le site", visHint:"Décochez pour cacher cet article de la boutique (article pas encore en vente). Différent de « Disponible à la vente » : un article disponible=non reste visible, marqué en rupture.", hidden:"Masqué", hideAllWarn:"ATTENTION : cette action masque TOUS les articles de la boutique. Le site public n'affichera plus aucun article (message « Nouveautés bientôt disponibles »). Voulez-vous vraiment tout masquer ?", visFail:"Échec de l'enregistrement : l'article n'a pas été modifié.", bulkFail:"Échec en cours de route : {n} article(s) modifié(s) sur {m}. Liste rechargée.", fAll:"Tous", fVis:"Visibles", fHid:"Masqués", showAll:"Tout afficher", hideAll:"Tout masquer", bulkAsk:"{a} : {n} article(s) de la liste affichée. Confirmer ?", bulkDone:"{n} article(s) mis à jour", visOn:"Article visible sur le site", visOff:"Article masqué du site", visToggle:"Visible sur le site", save:"Enregistrer", cancel:"Annuler", del:"Supprimer", delConfirm:"Supprimer définitivement cet article ?", deleted:"Article supprimé", savedP:"Article enregistré",
+ noPhoto:"Aucune photo : visuel par défaut.", remove:"Retirer", emptyFr:"vide = français", saved:"Enregistré",
+ nameReq:"Le nom français est obligatoire (il sert de repli aux autres langues).", badPrice:"Prix invalide.", promoBad:"Le prix promo doit être inférieur au prix (et le prix doit être renseigné).",
+ g_homme:"homme", g_femme:"femme", g_mixte:"mixte",
+ ic_bottle:"flacon", ic_box:"boîte", ic_abaya:"abaya", ic_qamis:"qamis", ic_watch:"montre", ic_rug:"tapis", ic_incense:"encens", ic_tasbih:"tasbih",
+ catH:"Catégories", catHint:"Renommez, réordonnez, masquez ou ajoutez des catégories. « Promos » se remplit automatiquement avec les articles ayant un prix promo. L'option « sous-filtres » affiche Homme / Femme / Mixte (les autres catégories ont leurs sous-filtres automatiquement).",
+ nameFr:"Nom (FR)", nameEn:"Nom (EN) - vide = français", nameAr:"Nom (AR) - vide = français", defVisual:"Visuel par défaut", visible:"Visible sur le site", subf:"Sous-filtres Homme/Femme/Mixte",
+ addCat:"+ Ajouter une catégorie", saveCats:"Enregistrer les catégories", catMoveFirst:"Déplacez d'abord les articles de cette catégorie.", catDel:"Supprimer la catégorie ?", catSaved:"Catégories enregistrées",
+ newCatName:"Nouvelle catégorie",
+ prH:"Promos", prHint:"Saisissez un prix promo ou un pourcentage : le prix barré et le badge -% apparaissent sur le site et dans la catégorie « Promos ». Videz le champ pour retirer la promo.",
+ thArt:"Article", thPrice:"Prix", thPromo:"Prix promo", saveP:"Enregistrer les promos", promoErr:"Un prix promo doit être inférieur au prix.", promoSaved:"Promos enregistrées",
+ vH:"Parfums vedettes du carrousel 3D", vHint:"{n} vedette(s) (6 recommandés ; maximum 8 affichés). Chaque flacon 3D prend les couleurs choisies ici ; le texte « profil olfactif » vient des notes.",
+ prim:"Primaire", sec:"Secondaire", head:"Tête", heart:"Cœur", base:"Fond", addV:"Ajouter un article en vedette…", vErr:"Gardez au moins un parfum en vedette visible sur le site.", vSaved:"Vedettes enregistrées",
+ tH:"Textes du site (AR / EN / FR)", tHint:"Tous les textes du site sont modifiables, dans les 3 langues. Chaque champ affiche le texte actuel. Videz un champ pour revenir au texte d'origine de cette langue. L'arabe s'affiche de droite à gauche. Les groupes se déplient en cliquant sur leur titre.",
+ tSearch:"Rechercher un texte (ex. panier, WhatsApp, Add to cart…)", faq:"Foire aux questions (FAQ)", addFaq:"+ Ajouter une question", saveT:"Enregistrer les textes", question:"Question", answer:"Réponse",
+ iH:"Logo & photos", iHint:"Téléversez une image ou collez son adresse. Les photos de la boutique apparaissent dans la section « La boutique » et dans le pied de page.",
+ sLogo:"Logo (barre de navigation, chargement, favicon visuel, pied de page)", sOg:"Image de partage (réseaux sociaux / WhatsApp)", sShop:"Photo de la boutique {n}", replace:"Remplacer", imgUrl:"adresse de l'image", imgReady:"Image prête : cliquez sur Enregistrer", resetImg:"Remettre les images d'origine",
+ lH:"Liens & contact", lHint:"Un lien laissé vide est masqué sur le site (Snapchat, Avis Google et Itinéraire sont vides pour l'instant). Le lien Facebook est provisoire (recherche « BAKKAH ») : à remplacer par l'adresse exacte de la page.",
+ gWa:"Commande WhatsApp", waNum:"Numéro WhatsApp de la boutique (indicatif pays, sans +, ex. 212671501152)", currency:"Devise (vide = « DH » / « درهم » selon la langue ; modifiable aussi dans Textes > meta.currency)",
+ gShop:"Boutique", shopName:"Nom de la boutique", phone:"Téléphone (appel direct)", addr:"Adresse (vide = « Maroc » provisoire)", hours:"Horaires (vide = « Lun–Sam 10h–21h » provisoire)", gLinks:"Liens",
+ waLink:"Lien WhatsApp (vide = automatique avec le numéro)", reviews:"Avis Google", reviewsPh:"lien de votre fiche Google", route:"Itinéraire (Google Maps)", routePh:"lien Google Maps", news:"Afficher l'inscription newsletter",
+ linkBad:"Lien refusé ({k}) : seuls les liens commençant par https://, http://, tel: ou mailto: sont acceptés. Rien n'a été enregistré.",
+ bH:"Sauvegarde", bHint:"Téléchargez une copie de tout le contenu (articles, catégories, textes) ou restaurez-la.", exp:"Télécharger la sauvegarde", imp:"Restaurer une sauvegarde", rst:"Remettre les données de démonstration",
+ impConfirm:"Remplacer le contenu actuel par cette sauvegarde ?", rstConfirm:"Effacer vos modifications locales et revenir aux données de démonstration ?",
+ nlH:"Newsletter", subs:"{n} inscrit(s).", csv:"Télécharger la liste (CSV)", pwH:"Mot de passe", pwLocal:"Protection de l'espace vendeur dans ce navigateur. Pour une vraie sécurité partagée, utilisez Supabase.", pwNew:"Nouveau mot de passe", pwConf:"Confirmer", pwChange:"Changer le mot de passe", pwChanged:"Mot de passe changé", pwLive:"Le mot de passe se gère dans Supabase (Authentication → Users).",
+ e_photo:"Photo illisible", e_file:"Ce fichier n'est pas une photo lisible.", e_mem:"Mémoire du navigateur pleine : utilisez des photos plus petites.", e_mem2:"Mémoire du navigateur pleine.", e_mem3:"Mémoire du navigateur pleine : utilisez des photos plus petites ou passez en mode Supabase.", e_pw:"Mot de passe incorrect.", e_login:"E-mail ou mot de passe incorrect."
+},
+en:{
+ title:"Seller area", site:"View site", out:"Log out", modeLocal:"Local mode", langLbl:"Language",
+ demo:"Local mode: changes are saved in <b>this browser</b> only. To make them visible to all your customers, connect Supabase (see README).",
+ lhLive:"Log in with the account created in Supabase.", lhFirst:"First visit: choose the password for the seller area (6 characters minimum).", lhPw:"Enter your password.",
+ email:"E-mail", pw:"Password", pw2:"Confirm password", enter:"Log in", create:"Create password",
+ pwMin:"6 characters minimum.", pwDiff:"The two passwords do not match.", err:"Error",
+ t_articles:"Products", t_categories:"Categories", t_promos:"Promotions", t_vedettes:"Featured 3D perfumes", t_textes:"Texts & FAQ", t_images:"Logo & photos", t_liens:"Links & contact", t_donnees:"Data & security",
+ onRequest:"Price on request", onRequestLc:"on request",
+ search:"Search for a product", allCats:"All categories", newP:"+ New product", count:"{n} product(s). The arrows change the display order.", none:"No products.",
+ star:"3D carousel", unavail:"Unavailable", example:"Example (demo)", up:"Move up", down:"Move down", edit:"Edit",
+ newTitle:"New product", editTitle:"Edit product", name:"Name", cat:"Category", genre:"Gender (perfumes)", brand:"Brand", cont:"Volume (e.g. 100 ml)", conc:"Concentration (e.g. EDP)",
+ demoLbl:"Example product (« Example » badge)", badge:"Label (e.g. New)", price:"Price", priceEmpty:"empty = « Price on request »", promo:"Promo price (empty = no promo)", pct:"or % discount", pctPh:"e.g. 20",
+ vlab:"Variant type (Size, Scent…)", stock:"Stock (empty = unlimited)",
+ vars:"Variants: one per line in the format <code>French | English | Arabic | price</code> (English, Arabic and price are optional; e.g. <code>100 ml | 100 ml | 100 مل | 129</code>)",
+ desc:"Description", photos:"Photos (the 1st is the main one; with no photo, a gold & black visual is shown)", addPh:"+ Add photos", urlPh:"or paste an image address", add:"Add",
+ carGrp:"3D carousel and colors", featLbl:"Feature this perfume in the 3D carousel (6 recommended)", c1:"Primary color", c2:"Secondary color",
+ notesGrp:"Fragrance notes", nconf:"Notes to be confirmed (shows « Notes to be confirmed » instead of the notes)", nTete:"Top notes", nCoeur:"Heart notes", nFond:"Base notes",
+ dispo:"Available for sale", visLbl:"Visible on the site", visHint:"Untick to hide this product from the shop (not on sale yet). Different from « Available for sale »: an unavailable product stays visible, marked out of stock.", hidden:"Hidden", hideAllWarn:"WARNING: this hides ALL products of the shop. The public site will show no product at all (message « New arrivals coming soon »). Do you really want to hide everything?", visFail:"Save failed: the product was not changed.", bulkFail:"Failed midway: {n} product(s) updated out of {m}. List reloaded.", fAll:"All", fVis:"Visible", fHid:"Hidden", showAll:"Show all", hideAll:"Hide all", bulkAsk:"{a}: {n} product(s) in the displayed list. Confirm?", bulkDone:"{n} product(s) updated", visOn:"Product visible on the site", visOff:"Product hidden from the site", visToggle:"Visible on the site", save:"Save", cancel:"Cancel", del:"Delete", delConfirm:"Permanently delete this product?", deleted:"Product deleted", savedP:"Product saved",
+ noPhoto:"No photo: default visual.", remove:"Remove", emptyFr:"empty = French", saved:"Saved",
+ nameReq:"The French name is required (it is used as a fallback for the other languages).", badPrice:"Invalid price.", promoBad:"The promo price must be lower than the price (and the price must be filled in).",
+ g_homme:"men", g_femme:"women", g_mixte:"unisex",
+ ic_bottle:"bottle", ic_box:"box", ic_abaya:"abaya", ic_qamis:"qamis", ic_watch:"watch", ic_rug:"rug", ic_incense:"incense", ic_tasbih:"tasbih",
+ catH:"Categories", catHint:"Rename, reorder, hide or add categories. « Promotions » is filled automatically with products that have a promo price. The « sub-filters » option shows Men / Women / Unisex (other categories get their sub-filters automatically).",
+ nameFr:"Name (FR)", nameEn:"Name (EN) - empty = French", nameAr:"Name (AR) - empty = French", defVisual:"Default visual", visible:"Visible on the site", subf:"Sub-filters Men/Women/Unisex",
+ addCat:"+ Add a category", saveCats:"Save categories", catMoveFirst:"First move the products out of this category.", catDel:"Delete the category?", catSaved:"Categories saved",
+ newCatName:"New category",
+ prH:"Promotions", prHint:"Enter a promo price or a percentage: the crossed-out price and the -% badge appear on the site and in the « Promotions » category. Empty the field to remove the promo.",
+ thArt:"Product", thPrice:"Price", thPromo:"Promo price", saveP:"Save promotions", promoErr:"A promo price must be lower than the price.", promoSaved:"Promotions saved",
+ vH:"Featured perfumes of the 3D carousel", vHint:"{n} featured (6 recommended; maximum 8 displayed). Each 3D bottle takes the colors chosen here; the « fragrance profile » text comes from the notes.",
+ prim:"Primary", sec:"Secondary", head:"Top", heart:"Heart", base:"Base", addV:"Add a featured product…", vErr:"Keep at least one featured perfume that is visible on the site.", vSaved:"Featured perfumes saved",
+ tH:"Site texts (AR / EN / FR)", tHint:"All site texts can be edited, in the 3 languages. Each field shows the current text. Empty a field to go back to the original text of that language. Arabic is displayed right-to-left. Groups expand when you click their title.",
+ tSearch:"Search for a text (e.g. cart, WhatsApp, Add to cart…)", faq:"Frequently asked questions (FAQ)", addFaq:"+ Add a question", saveT:"Save texts", question:"Question", answer:"Answer",
+ iH:"Logo & photos", iHint:"Upload an image or paste its address. The shop photos appear in the « The shop » section and in the footer.",
+ sLogo:"Logo (navigation bar, loading screen, visual favicon, footer)", sOg:"Sharing image (social networks / WhatsApp)", sShop:"Shop photo {n}", replace:"Replace", imgUrl:"image address", imgReady:"Image ready: click Save", resetImg:"Restore the original images",
+ lH:"Links & contact", lHint:"An empty link is hidden on the site (Snapchat, Google Reviews and Directions are empty for now). The Facebook link is temporary (search for « BAKKAH »): replace it with the exact page address.",
+ gWa:"WhatsApp ordering", waNum:"Shop WhatsApp number (country code, no +, e.g. 212671501152)", currency:"Currency (empty = « DH » / « درهم » depending on the language; also editable in Texts > meta.currency)",
+ gShop:"Shop", shopName:"Shop name", phone:"Phone (direct call)", addr:"Address (empty = temporary « Morocco »)", hours:"Opening hours (empty = temporary « Mon–Sat 10am–9pm »)", gLinks:"Links",
+ waLink:"WhatsApp link (empty = automatic from the number)", reviews:"Google Reviews", reviewsPh:"link to your Google listing", route:"Directions (Google Maps)", routePh:"Google Maps link", news:"Show the newsletter sign-up",
+ linkBad:"Link refused ({k}): only links starting with https://, http://, tel: or mailto: are accepted. Nothing was saved.",
+ bH:"Backup", bHint:"Download a copy of all the content (products, categories, texts) or restore one.", exp:"Download the backup", imp:"Restore a backup", rst:"Restore the demo data",
+ impConfirm:"Replace the current content with this backup?", rstConfirm:"Erase your local changes and go back to the demo data?",
+ nlH:"Newsletter", subs:"{n} subscriber(s).", csv:"Download the list (CSV)", pwH:"Password", pwLocal:"Protection of the seller area in this browser. For real shared security, use Supabase.", pwNew:"New password", pwConf:"Confirm", pwChange:"Change the password", pwChanged:"Password changed", pwLive:"The password is managed in Supabase (Authentication → Users).",
+ e_photo:"Unreadable photo", e_file:"This file is not a readable photo.", e_mem:"Browser storage full: use smaller photos.", e_mem2:"Browser storage full.", e_mem3:"Browser storage full: use smaller photos or switch to Supabase mode.", e_pw:"Incorrect password.", e_login:"Incorrect e-mail or password."
+},
+ar:{
+ title:"فضاء البائع", site:"عرض الموقع", out:"خروج", modeLocal:"الوضع المحلي", langLbl:"اللغة",
+ demo:"الوضع المحلي: تُحفظ التعديلات في <b>هذا المتصفح</b> فقط. لكي يراها جميع زبنائك، اربط Supabase (انظر README).",
+ lhLive:"سجّل الدخول بالحساب المنشأ في Supabase.", lhFirst:"الزيارة الأولى: اختر كلمة مرور فضاء البائع (6 أحرف على الأقل).", lhPw:"أدخل كلمة المرور.",
+ email:"البريد الإلكتروني", pw:"كلمة المرور", pw2:"تأكيد كلمة المرور", enter:"دخول", create:"إنشاء كلمة المرور",
+ pwMin:"6 أحرف على الأقل.", pwDiff:"كلمتا المرور غير متطابقتين.", err:"خطأ",
+ t_articles:"المنتجات", t_categories:"الفئات", t_promos:"العروض", t_vedettes:"عطور مميزة ثلاثية الأبعاد", t_textes:"النصوص والأسئلة الشائعة", t_images:"الشعار والصور", t_liens:"الروابط والتواصل", t_donnees:"البيانات والأمان",
+ onRequest:"السعر عند الطلب", onRequestLc:"عند الطلب",
+ search:"ابحث عن منتج", allCats:"كل الفئات", newP:"+ منتج جديد", count:"{n} منتج. تغيّر الأسهم ترتيب العرض.", none:"لا توجد منتجات.",
+ star:"العرض الدوّار ثلاثي الأبعاد", unavail:"غير متوفر", example:"مثال (تجريبي)", up:"إلى الأعلى", down:"إلى الأسفل", edit:"تعديل",
+ newTitle:"منتج جديد", editTitle:"تعديل المنتج", name:"الاسم", cat:"الفئة", genre:"الجنس (العطور)", brand:"العلامة التجارية", cont:"السعة (مثال: 100 مل)", conc:"التركيز (مثال: EDP)",
+ demoLbl:"منتج تجريبي (شارة «مثال»)", badge:"ملصق (مثال: جديد)", price:"السعر", priceEmpty:"فارغ = «السعر عند الطلب»", promo:"سعر العرض (فارغ = بدون عرض)", pct:"أو نسبة التخفيض %", pctPh:"مثال: 20",
+ vlab:"نوع الخيار (الحجم، العطر…)", stock:"المخزون (فارغ = غير محدود)",
+ vars:"الخيارات: واحد في كل سطر بالصيغة <code>الفرنسية | الإنجليزية | العربية | السعر</code> (الإنجليزية والعربية والسعر اختيارية؛ مثال: <code>100 ml | 100 ml | 100 مل | 129</code>)",
+ desc:"الوصف", photos:"الصور (الأولى هي الرئيسية؛ بدون صورة تظهر صورة ذهبية وسوداء)", addPh:"+ إضافة صور", urlPh:"أو الصق عنوان صورة", add:"إضافة",
+ carGrp:"العرض الدوّار ثلاثي الأبعاد والألوان", featLbl:"إبراز هذا العطر في العرض الدوّار ثلاثي الأبعاد (يُنصح بـ 6)", c1:"اللون الأساسي", c2:"اللون الثانوي",
+ notesGrp:"النفحات العطرية", nconf:"النفحات قيد التأكيد (يعرض «النفحات قيد التأكيد» بدل النفحات)", nTete:"النفحات العليا", nCoeur:"نفحات القلب", nFond:"نفحات القاعدة",
+ dispo:"متوفر للبيع", visLbl:"ظاهر في الموقع", visHint:"ألغِ التحديد لإخفاء هذا المنتج من المتجر (غير معروض للبيع بعد). يختلف عن «متوفر للبيع»: المنتج غير المتوفر يبقى ظاهرا مع علامة نفاد المخزون.", hidden:"مخفي", hideAllWarn:"تنبيه: سيؤدي هذا الإجراء إلى إخفاء جميع منتجات المتجر. لن يعرض الموقع العام أي منتج (رسالة «المنتجات الجديدة قريبا»). هل تريد فعلا إخفاء كل شيء؟", visFail:"فشل الحفظ: لم يتم تعديل المنتج.", bulkFail:"حدث خطأ أثناء العملية: تم تحديث {n} منتج من أصل {m}. تمت إعادة تحميل القائمة.", fAll:"الكل", fVis:"الظاهرة", fHid:"المخفية", showAll:"إظهار الكل", hideAll:"إخفاء الكل", bulkAsk:"{a}: {n} منتج في القائمة المعروضة. هل تؤكد؟", bulkDone:"تم تحديث {n} منتج", visOn:"المنتج ظاهر في الموقع", visOff:"المنتج مخفي من الموقع", visToggle:"ظاهر في الموقع", save:"حفظ", cancel:"إلغاء", del:"حذف", delConfirm:"هل تريد حذف هذا المنتج نهائيا؟", deleted:"تم حذف المنتج", savedP:"تم حفظ المنتج",
+ noPhoto:"لا توجد صورة: صورة افتراضية.", remove:"إزالة", emptyFr:"فارغ = الفرنسية", saved:"تم الحفظ",
+ nameReq:"الاسم بالفرنسية إلزامي (يُستعمل بديلا للغات الأخرى).", badPrice:"سعر غير صالح.", promoBad:"يجب أن يكون سعر العرض أقل من السعر (ويجب إدخال السعر).",
+ g_homme:"رجال", g_femme:"نساء", g_mixte:"للجنسين",
+ ic_bottle:"قارورة", ic_box:"علبة", ic_abaya:"عباية", ic_qamis:"قميص", ic_watch:"ساعة", ic_rug:"سجادة", ic_incense:"بخور", ic_tasbih:"سبحة",
+ catH:"الفئات", catHint:"أعد تسمية الفئات أو رتّبها أو أخفها أو أضف فئات جديدة. تمتلئ فئة «العروض» تلقائيا بالمنتجات التي لها سعر عرض. خيار «الفلاتر الفرعية» يعرض رجال / نساء / للجنسين (أما الفئات الأخرى فتحصل على فلاترها الفرعية تلقائيا).",
+ nameFr:"الاسم (FR)", nameEn:"الاسم (EN) - فارغ = الفرنسية", nameAr:"الاسم (AR) - فارغ = الفرنسية", defVisual:"الصورة الافتراضية", visible:"ظاهرة في الموقع", subf:"فلاتر فرعية رجال/نساء/للجنسين",
+ addCat:"+ إضافة فئة", saveCats:"حفظ الفئات", catMoveFirst:"انقل أولا منتجات هذه الفئة إلى فئة أخرى.", catDel:"حذف الفئة؟", catSaved:"تم حفظ الفئات",
+ newCatName:"فئة جديدة",
+ prH:"العروض", prHint:"أدخل سعر العرض أو نسبة مئوية: يظهر السعر المشطوب وشارة -% في الموقع وفي فئة «العروض». أفرغ الحقل لإلغاء العرض.",
+ thArt:"المنتج", thPrice:"السعر", thPromo:"سعر العرض", saveP:"حفظ العروض", promoErr:"يجب أن يكون سعر العرض أقل من السعر.", promoSaved:"تم حفظ العروض",
+ vH:"العطور المميزة في العرض الدوّار ثلاثي الأبعاد", vHint:"{n} عطر مميز (يُنصح بـ 6؛ الحد الأقصى المعروض 8). تأخذ كل قارورة ثلاثية الأبعاد الألوان المختارة هنا؛ ونص «الملف العطري» يأتي من النفحات.",
+ prim:"الأساسي", sec:"الثانوي", head:"العليا", heart:"القلب", base:"القاعدة", addV:"إضافة منتج مميز…", vErr:"أبقِ عطرا مميزا واحدا على الأقل ظاهرا في الموقع.", vSaved:"تم حفظ العطور المميزة",
+ tH:"نصوص الموقع (AR / EN / FR)", tHint:"يمكن تعديل كل نصوص الموقع باللغات الثلاث. يعرض كل حقل النص الحالي. أفرغ الحقل للعودة إلى النص الأصلي لتلك اللغة. تُعرض العربية من اليمين إلى اليسار. تُفتح المجموعات بالنقر على عنوانها.",
+ tSearch:"ابحث عن نص (مثال: السلة، WhatsApp، Add to cart…)", faq:"الأسئلة الشائعة", addFaq:"+ إضافة سؤال", saveT:"حفظ النصوص", question:"السؤال", answer:"الجواب",
+ iH:"الشعار والصور", iHint:"ارفع صورة أو الصق عنوانها. تظهر صور المتجر في قسم «المتجر» وفي أسفل الصفحة.",
+ sLogo:"الشعار (شريط التنقل، شاشة التحميل، أيقونة الموقع، أسفل الصفحة)", sOg:"صورة المشاركة (الشبكات الاجتماعية / WhatsApp)", sShop:"صورة المتجر {n}", replace:"استبدال", imgUrl:"عنوان الصورة", imgReady:"الصورة جاهزة: انقر على حفظ", resetImg:"استعادة الصور الأصلية",
+ lH:"الروابط والتواصل", lHint:"الرابط الفارغ يُخفى في الموقع (سناب شات وتقييمات Google والاتجاهات فارغة حاليا). رابط Facebook مؤقت (بحث عن «BAKKAH»): يجب استبداله بعنوان الصفحة الدقيق.",
+ gWa:"الطلب عبر WhatsApp", waNum:"رقم WhatsApp للمتجر (مفتاح الدولة بدون +، مثال: 212671501152)", currency:"العملة (فارغ = «DH» / «درهم» حسب اللغة؛ قابلة للتعديل أيضا في النصوص > meta.currency)",
+ gShop:"المتجر", shopName:"اسم المتجر", phone:"الهاتف (اتصال مباشر)", addr:"العنوان (فارغ = «المغرب» مؤقتا)", hours:"أوقات العمل (فارغ = «الاثنين–السبت 10:00–21:00» مؤقتا)", gLinks:"الروابط",
+ waLink:"رابط WhatsApp (فارغ = تلقائي انطلاقا من الرقم)", reviews:"تقييمات Google", reviewsPh:"رابط صفحتك على Google", route:"الاتجاهات (Google Maps)", routePh:"رابط Google Maps", news:"عرض الاشتراك في النشرة البريدية",
+ linkBad:"رابط مرفوض ({k}): لا تُقبل إلا الروابط التي تبدأ بـ https:// أو http:// أو tel: أو mailto:. لم يتم حفظ أي شيء.",
+ bH:"النسخة الاحتياطية", bHint:"نزّل نسخة من كل المحتوى (المنتجات والفئات والنصوص) أو استرجعها.", exp:"تنزيل النسخة الاحتياطية", imp:"استرجاع نسخة احتياطية", rst:"استعادة البيانات التجريبية",
+ impConfirm:"استبدال المحتوى الحالي بهذه النسخة الاحتياطية؟", rstConfirm:"مسح تعديلاتك المحلية والعودة إلى البيانات التجريبية؟",
+ nlH:"النشرة البريدية", subs:"{n} مشترك.", csv:"تنزيل القائمة (CSV)", pwH:"كلمة المرور", pwLocal:"حماية فضاء البائع في هذا المتصفح. للحصول على أمان مشترك حقيقي، استعمل Supabase.", pwNew:"كلمة مرور جديدة", pwConf:"تأكيد", pwChange:"تغيير كلمة المرور", pwChanged:"تم تغيير كلمة المرور", pwLive:"تُدار كلمة المرور في Supabase (Authentication → Users).",
+ e_photo:"صورة غير مقروءة", e_file:"هذا الملف ليس صورة قابلة للقراءة.", e_mem:"ذاكرة المتصفح ممتلئة: استعمل صورا أصغر.", e_mem2:"ذاكرة المتصفح ممتلئة.", e_mem3:"ذاكرة المتصفح ممتلئة: استعمل صورا أصغر أو انتقل إلى وضع Supabase.", e_pw:"كلمة المرور غير صحيحة.", e_login:"البريد الإلكتروني أو كلمة المرور غير صحيحة."
+}};
+/* groupes de la page Textes (clé = libellé français de data.js) */
+const GRP = {"Titre et description (SEO)":["Title and description (SEO)","العنوان والوصف (SEO)"],"Navigation":["Navigation","التنقل"],"Boutons":["Buttons","الأزرار"],"Panier":["Cart","السلة"],"Écran de chargement":["Loading screen","شاشة التحميل"],"Accueil":["Home","الرئيسية"],"Titres de sections":["Section titles","عناوين الأقسام"],"Profil olfactif":["Fragrance profile","الملف العطري"],"Engagements":["Commitments","التزاماتنا"],"Mot-signe":["Signature word","الكلمة الرمز"],"Fiche produit":["Product page","صفحة المنتج"],"Senteurs":["Scents","العطور"],"Newsletter":["Newsletter","النشرة البريدية"],"Pied de page":["Footer","أسفل الصفحة"],"Message WhatsApp":["WhatsApp message","رسالة WhatsApp"],"Filtres du catalogue":["Catalogue filters","فلاتر الكتالوج"],"Profil olfactif (mots de fond)":["Fragrance profile (background words)","الملف العطري (كلمات الخلفية)"],"Son":["Sound","الصوت"],"Section boutique":["Shop section","قسم المتجر"],"Textes légaux":["Legal texts","النصوص القانونية"],"Accessibilité":["Accessibility","إمكانية الوصول"]};
+const ERRMAP = {"Photo illisible":"e_photo","Ce fichier n'est pas une photo lisible.":"e_file","Mémoire du navigateur pleine : utilisez des photos plus petites.":"e_mem","Mémoire du navigateur pleine.":"e_mem2","Mémoire du navigateur pleine : utilisez des photos plus petites ou passez en mode Supabase.":"e_mem3","Mot de passe incorrect.":"e_pw","E-mail ou mot de passe incorrect.":"e_login"};
+const LANG_KEY = "bk_admin_lang";
+let LANG = (() => { let l = ""; try { l = localStorage.getItem(LANG_KEY) || ""; } catch(e){} if (!TR[l]) l = ((navigator.language || "fr") + "").slice(0, 2).toLowerCase(); return TR[l] ? l : "fr"; })();
+const t = (k, v) => { let s = (TR[LANG][k] ?? TR.fr[k] ?? k); if (v) for (const n in v) s = s.replace("{" + n + "}", v[n]); return s; };
+const grp = g => LANG === "fr" || !GRP[g] ? g : GRP[g][LANG === "en" ? 0 : 1];
+const errMsg = e => { const m = (e && e.message) || ""; return ERRMAP[m] ? t(ERRMAP[m]) : (m || t("err")); };
+
 const D = window.SiteData, $ = (s, r) => (r || document).querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let S, CATS, PRODS, tab = "articles", filterCat = "", search = "";
-const TABS = [["articles","Articles"],["categories","Catégories"],["promos","Promos"],["vedettes","Parfums vedettes 3D"],["textes","Textes & FAQ"],["images","Logo & photos"],["liens","Liens & contact"],["donnees","Données & sécurité"]];
-
-function toast(msg, err){ const t = $("#toast"); t.textContent = msg; t.className = "show" + (err ? " err" : ""); clearTimeout(toast.t); toast.t = setTimeout(() => t.className = "", 2600); }
-async function guard(fn){ try { await fn(); } catch(e){ console.error(e); toast(e.message || "Erreur", true); } }
-const saveS = () => guard(async () => { await D.saveSettings(S); toast("Enregistré"); });
-const catName = id => (CATS.find(c => c.id === id) || {}).nom || id;
-const money = n => D.hasPrice(n) ? D.fmt(n, "fr", D.currency(S, "fr")) : "Prix sur demande";
+let S, CATS, PRODS, tab = "articles", filterCat = "", filterVis = "", search = "", loginMode = null;
+const TABS = ["articles","categories","promos","vedettes","textes","images","liens","donnees"];
 const L3 = [["fr","FR"],["en","EN"],["ar","AR"]];
+const dirOf = l => l === "ar" ? ' dir="rtl"' : ' dir="ltr"';
+
+function toast(msg, err){ const el = $("#toast"); el.textContent = msg; el.className = "show" + (err ? " err" : ""); clearTimeout(toast.t); toast.t = setTimeout(() => el.className = "", 2600); }
+async function guard(fn){ try { await fn(); } catch(e){ console.warn(e); toast(errMsg(e), true); } }
+const saveS = () => guard(async () => { await D.saveSettings(S); toast(t("saved")); });
+const catName = id => (CATS.find(c => c.id === id) || {}).nom || id;
+const money = n => D.hasPrice(n) ? D.fmt(n, "fr", D.currency(S, "fr")) : t("onRequest");
 const thumb = p => D.photoOf(p, CATS);
+
+/* ---------- Langue ---------- */
+function paintStatic(){
+  const h = document.documentElement; h.lang = LANG; h.dir = LANG === "ar" ? "rtl" : "ltr";
+  document.title = "BAKKAH · " + t("title");
+  document.querySelectorAll("[data-tx]").forEach(el => el.textContent = t(el.dataset.tx));
+  const dm = $("#demoMsg"); if (dm) dm.innerHTML = t("demo");
+  document.querySelectorAll(".lsw button").forEach(b => { const on = b.dataset.lang === LANG; b.setAttribute("aria-pressed", on); });
+  document.querySelectorAll(".lsw").forEach(w => w.setAttribute("aria-label", t("langLbl")));
+  $("#modeBadge").textContent = D.mode === "live" ? "Supabase" : t("modeLocal");
+  paintLogin();
+  if (!$("#app").hidden){ drawTabs(); if ($("#dlg").open) $("#dlg").close(); render(); }
+}
+function paintLogin(){
+  if (!loginMode) return;
+  const { live, first } = loginMode;
+  $("#loginHint").textContent = live ? t("lhLive") : first ? t("lhFirst") : t("lhPw");
+  $("#lBtn").textContent = first ? t("create") : t("enter");
+  $("#lErr").textContent = "";
+}
+document.addEventListener("click", e => { const b = e.target.closest(".lsw button"); if (!b) return; LANG = b.dataset.lang; try { localStorage.setItem(LANG_KEY, LANG); } catch(x){} paintStatic(); });
 
 /* ---------- Connexion ---------- */
 async function boot(){
-  $("#modeBadge").textContent = D.mode === "live" ? "Supabase" : "Mode local";
   $("#demoBar").hidden = D.mode === "live";
+  paintStatic();
   const s = await D.session();
   if (s) return start();
   const lf = $("#loginForm"), live = D.mode === "live", first = !live && !D.hasPassword();
+  loginMode = { live, first };
   $("#login").hidden = false; $("#emailRow").hidden = !live; $("#pw2Row").hidden = !first;
-  $("#loginHint").textContent = live ? "Connectez-vous avec le compte créé dans Supabase." : first ? "Première visite : choisissez le mot de passe de l'espace vendeur (6 caractères minimum)." : "Entrez votre mot de passe.";
-  $("#lBtn").textContent = first ? "Créer le mot de passe" : "Entrer";
+  paintLogin();
   lf.onsubmit = async e => { e.preventDefault(); $("#lErr").textContent = ""; const pw = $("#lPw").value;
     try{
-      if (first){ if (pw.length < 6) throw new Error("6 caractères minimum."); if (pw !== $("#lPw2").value) throw new Error("Les deux mots de passe sont différents."); await D.setPassword(pw); }
+      if (first){ if (pw.length < 6) throw new Error(t("pwMin")); if (pw !== $("#lPw2").value) throw new Error(t("pwDiff")); await D.setPassword(pw); }
       else await D.login($("#lEmail").value, pw);
-      $("#login").hidden = true; start();
-    }catch(err){ $("#lErr").textContent = err.message; } };
+      $("#login").hidden = true; loginMode = null; start();
+    }catch(err){ $("#lErr").textContent = errMsg(err); } };
 }
+function drawTabs(){ $("#tabs").innerHTML = TABS.map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${t("t_" + k)}</button>`).join(""); }
 async function start(){
   [S, CATS, PRODS] = await Promise.all([D.getSettings(), D.getCategories(), D.getProducts()]);
   $("#app").hidden = false;
-  $("#tabs").innerHTML = TABS.map(([k, l]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${l}</button>`).join("");
+  drawTabs();
   $("#tabs").onclick = e => { const b = e.target.closest("[data-tab]"); if (!b) return; tab = b.dataset.tab; [...$("#tabs").children].forEach(x => x.setAttribute("aria-selected", x === b)); render(); };
   $("#logout").onclick = async () => { await D.logout(); location.reload(); };
   render();
@@ -162,22 +344,43 @@ function render(){ ({ articles, categories, promos, vedettes, textes, images, li
 
 /* ---------- Articles ---------- */
 function articles(){
-  const list = PRODS.filter(p => (!filterCat || (filterCat === "promos" ? p.prix_promo : p.categorie === filterCat)) && (!search || (p.nom + " " + (p.nom_en||"") + " " + (p.nom_ar||"")).toLowerCase().includes(search.toLowerCase())));
-  $("#view").innerHTML = `<div class="row" style="margin-bottom:12px"><input class="grow" type="text" id="q" placeholder="Rechercher un article" value="${esc(search)}">
-    <select id="fc" style="width:auto"><option value="">Toutes catégories</option>${CATS.map(c => `<option value="${esc(c.id)}" ${c.id === filterCat ? "selected" : ""}>${esc(c.nom)}</option>`).join("")}</select>
-    <button class="btn btn-gold" id="newP">+ Nouvel article</button></div>
-    <p class="hint">${list.length} article(s). Les flèches changent l'ordre d'affichage.</p>
-    ${list.map(p => { const pr = D.priceOf(p); const i = PRODS.indexOf(p); return `<div class="item ${p.dispo ? "" : "off"}">
+  const list = PRODS.filter(p => (!filterVis || (filterVis === "hid") === (p.visible === false)) && (!filterCat || (filterCat === "promos" ? p.prix_promo : p.categorie === filterCat)) && (!search || (p.nom + " " + (p.nom_en||"") + " " + (p.nom_ar||"")).toLowerCase().includes(search.toLowerCase())));
+  $("#view").innerHTML = `<div class="row" style="margin-bottom:12px"><input class="grow" type="text" id="q" placeholder="${esc(t("search"))}" value="${esc(search)}">
+    <select id="fc" style="width:auto"><option value="">${t("allCats")}</option>${CATS.map(c => `<option value="${esc(c.id)}" ${c.id === filterCat ? "selected" : ""}>${esc(c.nom)}</option>`).join("")}</select>
+    <button class="btn btn-gold" id="newP">${t("newP")}</button></div>
+    <div class="row vbar" style="margin-bottom:10px"><div class="seg" role="group">${[["","fAll"],["vis","fVis"],["hid","fHid"]].map(([k,l]) => `<button class="btn btn-sm ${filterVis === k ? "btn-gold" : "btn-line"}" data-fv="${k}" aria-pressed="${filterVis === k}">${t(l)} (${PRODS.filter(p => !k || (k === "hid") === (p.visible === false)).length})</button>`).join("")}</div>
+      <button class="btn btn-line btn-sm" data-bulk="show">${t("showAll")}</button><button class="btn btn-line btn-sm" data-bulk="hide">${t("hideAll")}</button></div>
+    <p class="hint">${t("count", { n: list.length })}</p>
+    ${list.map(p => { const pr = D.priceOf(p); const i = PRODS.indexOf(p); const hid = p.visible === false; return `<div class="item ${p.dispo && !hid ? "" : "off"} ${hid ? "hid" : ""}">
+      <label class="vis" title="${esc(t("visToggle"))}"><input type="checkbox" data-vis="${esc(p.id)}" ${hid ? "" : "checked"} aria-label="${esc(t("visToggle") + " : " + p.nom)}"></label>
       <img class="thumb" src="${esc(thumb(p))}" alt=""><div><h3>${esc(p.nom)}</h3>
       <div class="meta">${esc(catName(p.categorie))} · ${money(pr.now)}${pr.old ? ` <s>${money(pr.old)}</s>` : ""}${p.marque ? " · " + esc(p.marque) : ""}</div>
-      <div>${p.vedette ? '<span class="pill star">Carrousel 3D</span>' : ""}${pr.old ? `<span class="pill promo">-${D.pct(p)}%</span>` : ""}${p.dispo ? "" : '<span class="pill no">Indisponible</span>'}${p.demo ? '<span class="pill">Exemple (démo)</span>' : ""}</div></div>
-      <div class="acts"><button class="ib" data-up="${i}" ${i === 0 ? "disabled" : ""} aria-label="Monter">↑</button><button class="ib" data-down="${i}" ${i === PRODS.length - 1 ? "disabled" : ""} aria-label="Descendre">↓</button>
-      <button class="btn btn-line btn-sm" data-edit="${esc(p.id)}">Modifier</button></div></div>`; }).join("") || '<div class="card hint">Aucun article.</div>'}`;
+      <div>${hid ? `<span class="pill hidp">${t("hidden")}</span>` : ""}${p.vedette ? `<span class="pill star">${t("star")}</span>` : ""}${pr.old ? `<span class="pill promo" dir="ltr">-${D.pct(p)}%</span>` : ""}${p.dispo ? "" : `<span class="pill no">${t("unavail")}</span>`}${p.demo ? `<span class="pill">${t("example")}</span>` : ""}</div></div>
+      <div class="acts"><button class="ib" data-up="${i}" ${i === 0 ? "disabled" : ""} aria-label="${t("up")}">↑</button><button class="ib" data-down="${i}" ${i === PRODS.length - 1 ? "disabled" : ""} aria-label="${t("down")}">↓</button>
+      <button class="btn btn-line btn-sm" data-edit="${esc(p.id)}">${t("edit")}</button></div></div>`; }).join("") || `<div class="card hint">${t("none")}</div>`}`;
   $("#q").oninput = e => { search = e.target.value; const pos = e.target.selectionStart; articles(); const q = $("#q"); q.focus(); q.setSelectionRange(pos, pos); };
   $("#fc").onchange = e => { filterCat = e.target.value; articles(); };
+  const setVis = async (ps, v, box) => {
+    const prev = ps.map(p => p.visible); let n = 0;
+    try { for (const p of ps) { p.visible = v; await D.saveProduct(p); n++; } await reloadP(); articles(); toast(t("bulkDone", { n })); }
+    catch (e) {
+      console.warn(e);
+      if (ps.length === 1) { ps[0].visible = prev[0]; if (box) box.checked = prev[0] !== false; toast(t("visFail") + " " + errMsg(e), true); return; }
+      try { await reloadP(); } catch (e2) { console.warn(e2); }
+      articles(); toast(t("bulkFail", { n, m: ps.length }) + " " + errMsg(e), true);
+    }
+  };
+  $("#view").onchange = e => { const c = e.target.closest("[data-vis]"); if (c) setVis([PRODS.find(p => p.id === c.dataset.vis)], c.checked, c); };
   $("#newP").onclick = () => editProduct(null);
   $("#view").onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.fv !== undefined) { filterVis = b.dataset.fv; articles(); return; }
+    if (b.dataset.bulk) {
+      const show = b.dataset.bulk === "show";
+      if (!list.length || !confirm(t("bulkAsk", { a: t(show ? "showAll" : "hideAll"), n: list.length }))) return;
+      /* « Tout masquer » qui ne laisserait aucun article visible : confirmation explicite supplémentaire */
+      if (!show && !PRODS.some(p => p.visible !== false && !list.includes(p)) && !confirm(t("hideAllWarn"))) return;
+      setVis(list, show); return; }
     if (b.dataset.edit) editProduct(PRODS.find(p => p.id === b.dataset.edit));
     const mv = (i, d) => guard(async () => { const j = i + d; [PRODS[i], PRODS[j]] = [PRODS[j], PRODS[i]]; await D.saveProducts(PRODS); await reloadP(); articles(); });
     if (b.dataset.up) mv(+b.dataset.up, -1); if (b.dataset.down) mv(+b.dataset.down, 1);
@@ -185,39 +388,40 @@ function articles(){
 }
 function editProduct(p){
   const isNew = !p;
-  const x = p ? JSON.parse(JSON.stringify(p)) : { id: "", nom: "", nom_en: "", nom_ar: "", categorie: CATS.find(c => !c.auto)?.id || "", genre: "", marque: "", contenance: "", concentration: "", prix: null, prix_promo: null, variante_label: "", variante_label_en: "", variante_label_ar: "", variantes: [], badge: "", badge_en: "", badge_ar: "", demo: false, vedette: false, vedette_ordre: 99, couleur1: "#4a3a1a", couleur2: "#e6c066", notes: { tete: "", coeur: "", fond: "" }, notes_en: { tete: "", coeur: "", fond: "" }, notes_ar: { tete: "", coeur: "", fond: "" }, notes_a_confirmer: false, description: "", description_en: "", description_ar: "", photos: [], dispo: true, stock: null };
+  const x = p ? JSON.parse(JSON.stringify(p)) : { id: "", nom: "", nom_en: "", nom_ar: "", categorie: CATS.find(c => !c.auto)?.id || "", genre: "", marque: "", contenance: "", concentration: "", prix: null, prix_promo: null, variante_label: "", variante_label_en: "", variante_label_ar: "", variantes: [], badge: "", badge_en: "", badge_ar: "", demo: false, vedette: false, vedette_ordre: 99, couleur1: "#4a3a1a", couleur2: "#e6c066", notes: { tete: "", coeur: "", fond: "" }, notes_en: { tete: "", coeur: "", fond: "" }, notes_ar: { tete: "", coeur: "", fond: "" }, notes_a_confirmer: false, description: "", description_en: "", description_ar: "", photos: [], dispo: true, visible: true, stock: null };
   ["notes_en", "notes_ar"].forEach(k => x[k] = x[k] || { tete: "", coeur: "", fond: "" });
-  const sfx = l => l === "fr" ? "" : "_" + l, dirA = l => l === "ar" ? ' dir="rtl"' : "";
+  const sfx = l => l === "fr" ? "" : "_" + l, dirA = dirOf;
   const pv = x.variantes.map(v => [v.label, v.label_en || "", v.label_ar || "", D.hasPrice(v.prix) ? v.prix : ""].join(" | ")).join("\n");
   const dlg = $("#dlg");
-  const tri = (label, id, field, multi) => `<div class="g3">${L3.map(([l, T]) => `<div><label>${label} (${T})${l === "fr" ? "" : " - vide = français"}</label>${multi ? `<textarea${dirA(l)} id="${id}_${l}">${esc(x[field + sfx(l)] || "")}</textarea>` : `<input type="text"${dirA(l)} id="${id}_${l}" value="${esc(x[field + sfx(l)] || "")}">`}</div>`).join("")}</div>`;
+  const tri = (label, id, field, multi) => `<div class="g3">${L3.map(([l, T]) => `<div><label>${label} (${T})${l === "fr" ? "" : " - " + t("emptyFr")}</label>${multi ? `<textarea${dirA(l)} id="${id}_${l}">${esc(x[field + sfx(l)] || "")}</textarea>` : `<input type="text"${dirA(l)} id="${id}_${l}" value="${esc(x[field + sfx(l)] || "")}">`}</div>`).join("")}</div>`;
   const notesRow = (k, lab) => `<div class="g3">${L3.map(([l, T]) => `<div><label>${lab} (${T})</label><input type="text"${dirA(l)} id="n_${k}_${l}" value="${esc(((l === "fr" ? x.notes : x["notes_" + l]) || {})[k] || "")}"></div>`).join("")}</div>`;
-  $("#dlgBody").innerHTML = `<h2 class="serif" style="font-size:26px">${isNew ? "Nouvel article" : "Modifier l'article"}</h2>
-  ${tri("Nom", "f_nom", "nom")}
-  <div class="g3"><div><label>Catégorie</label><select id="f_cat">${CATS.filter(c => !c.auto).map(c => `<option value="${esc(c.id)}" ${c.id === x.categorie ? "selected" : ""}>${esc(c.nom)}</option>`).join("")}</select></div>
-  <div><label>Genre (parfums)</label><select id="f_genre"><option value="">-</option>${["homme","femme","mixte"].map(g => `<option ${g === x.genre ? "selected" : ""}>${g}</option>`).join("")}</select></div>
-  <div><label>Marque</label><input type="text" id="f_marque" value="${esc(x.marque || "")}"></div></div>
-  <div class="g3"><div><label>Contenance (ex. 100 ml)</label><input type="text" id="f_cont" value="${esc(x.contenance || "")}"></div><div><label>Concentration (ex. EDP)</label><input type="text" id="f_conc" value="${esc(x.concentration || "")}"></div><div class="sw" style="align-self:end"><input type="checkbox" id="f_demo" ${x.demo ? "checked" : ""}><label for="f_demo" style="margin:0;font-size:14px;color:var(--ink)">Article d'exemple (badge « Exemple »)</label></div></div>
-  ${tri("Étiquette (ex. Nouveau)", "f_badge", "badge")}
-  <div class="g3"><div><label>Prix (${esc(D.currency(S, "fr"))}) - vide = « Prix sur demande »</label><input type="number" step="0.01" min="0" id="f_prix" value="${D.hasPrice(x.prix) ? x.prix : ""}"></div>
-  <div><label>Prix promo (vide = pas de promo)</label><input type="number" step="0.01" min="0" id="f_promo" value="${x.prix_promo ?? ""}"></div>
-  <div><label>ou % de réduction</label><input type="number" min="0" max="95" id="f_pct" placeholder="ex. 20"></div></div>
-  ${tri("Type de variante (Taille, Senteur…)", "f_vl", "variante_label")}
-  <div class="g2"><div><label>Stock (vide = illimité)</label><input type="number" min="0" id="f_stock" value="${x.stock ?? ""}"></div></div>
-  <label>Variantes : une par ligne au format <code>français | anglais | arabe | prix</code> (anglais, arabe et prix facultatifs ; ex. <code>100 ml | 100 ml | 100 مل | 129</code>)</label><textarea id="f_vars" rows="4">${esc(pv)}</textarea>
-  ${tri("Description", "f_desc", "description", true)}
-  <label>Photos (la 1re est la principale ; sans photo, un visuel or & noir est affiché)</label>
+  $("#dlgBody").innerHTML = `<h2 class="serif" style="font-size:26px">${isNew ? t("newTitle") : t("editTitle")}</h2>
+  ${tri(t("name"), "f_nom", "nom")}
+  <div class="g3"><div><label>${t("cat")}</label><select id="f_cat">${CATS.filter(c => !c.auto).map(c => `<option value="${esc(c.id)}" ${c.id === x.categorie ? "selected" : ""}>${esc(c.nom)}</option>`).join("")}</select></div>
+  <div><label>${t("genre")}</label><select id="f_genre"><option value="">-</option>${["homme","femme","mixte"].map(g => `<option value="${g}" ${g === x.genre ? "selected" : ""}>${t("g_" + g)}</option>`).join("")}</select></div>
+  <div><label>${t("brand")}</label><input type="text" id="f_marque" value="${esc(x.marque || "")}"></div></div>
+  <div class="g3"><div><label>${t("cont")}</label><input type="text" id="f_cont" value="${esc(x.contenance || "")}"></div><div><label>${t("conc")}</label><input type="text" id="f_conc" value="${esc(x.concentration || "")}"></div><div class="sw" style="align-self:end"><input type="checkbox" id="f_demo" ${x.demo ? "checked" : ""}><label for="f_demo" class="lc">${t("demoLbl")}</label></div></div>
+  ${tri(t("badge"), "f_badge", "badge")}
+  <div class="g3"><div><label>${t("price")} (${esc(D.currency(S, "fr"))}) - ${t("priceEmpty")}</label><input type="number" step="0.01" min="0" id="f_prix" value="${D.hasPrice(x.prix) ? x.prix : ""}"></div>
+  <div><label>${t("promo")}</label><input type="number" step="0.01" min="0" id="f_promo" value="${x.prix_promo ?? ""}"></div>
+  <div><label>${t("pct")}</label><input type="number" min="0" max="95" id="f_pct" placeholder="${esc(t("pctPh"))}"></div></div>
+  ${tri(t("vlab"), "f_vl", "variante_label")}
+  <div class="g2"><div><label>${t("stock")}</label><input type="number" min="0" id="f_stock" value="${x.stock ?? ""}"></div></div>
+  <label>${t("vars")}</label><textarea id="f_vars" rows="4" dir="ltr">${esc(pv)}</textarea>
+  ${tri(t("desc"), "f_desc", "description", true)}
+  <label>${t("photos")}</label>
   <div class="photos" id="f_photos"></div>
-  <div class="row"><input type="file" id="f_file" accept="image/*" multiple hidden><button class="btn btn-line btn-sm" id="f_add">+ Ajouter des photos</button><input class="grow" type="url" id="f_url" placeholder="ou coller l'adresse d'une image"><button class="btn btn-line btn-sm" id="f_addurl">Ajouter</button></div>
-  <div class="fgroup">Carrousel 3D et couleurs</div>
-  <div class="sw"><input type="checkbox" id="f_vedette" ${x.vedette ? "checked" : ""}><label for="f_vedette" style="margin:0;font-size:14px;color:var(--ink)">Mettre ce parfum en vedette dans le carrousel 3D (6 recommandés)</label></div>
-  <div class="row"><div><label>Couleur primaire</label><input type="color" id="f_c1" value="${x.couleur1}"></div><div><label>Couleur secondaire</label><input type="color" id="f_c2" value="${x.couleur2}"></div></div>
-  <div class="fgroup">Notes olfactives</div>
-  <div class="sw"><input type="checkbox" id="f_nconf" ${x.notes_a_confirmer ? "checked" : ""}><label for="f_nconf" style="margin:0;font-size:14px;color:var(--ink)">Notes à confirmer (affiche « Notes à confirmer » au lieu des notes)</label></div>
-  ${notesRow("tete", "Notes de tête")}${notesRow("coeur", "Notes de cœur")}${notesRow("fond", "Notes de fond")}
-  <div class="sw" style="margin-top:12px"><input type="checkbox" id="f_dispo" ${x.dispo ? "checked" : ""}><label for="f_dispo" style="margin:0;font-size:14px;color:var(--ink)">Disponible à la vente</label></div>
-  <div class="row" style="margin-top:16px;justify-content:space-between"><div class="row"><button class="btn btn-gold" id="f_save">Enregistrer</button><button class="btn btn-line" id="f_cancel">Annuler</button></div>${isNew ? "" : '<button class="btn btn-danger btn-sm" id="f_del">Supprimer</button>'}</div>`;
-  const drawPh = () => { $("#f_photos").innerHTML = x.photos.map((u, i) => `<div class="ph"><img src="${esc(u)}" alt=""><button data-rm="${i}" aria-label="Retirer">×</button></div>`).join("") || '<span class="meta">Aucune photo : visuel par défaut.</span>'; };
+  <div class="row"><input type="file" id="f_file" accept="image/*" multiple hidden><button class="btn btn-line btn-sm" id="f_add">${t("addPh")}</button><input class="grow" type="url" id="f_url" placeholder="${esc(t("urlPh"))}"><button class="btn btn-line btn-sm" id="f_addurl">${t("add")}</button></div>
+  <div class="sw" style="margin-top:6px"><input type="checkbox" id="f_visible" ${x.visible === false ? "" : "checked"}><label for="f_visible" class="lc"><b>${t("visLbl")}</b></label></div><p class="hint">${t("visHint")}</p>
+  <div class="fgroup">${t("carGrp")}</div>
+  <div class="sw"><input type="checkbox" id="f_vedette" ${x.vedette ? "checked" : ""}><label for="f_vedette" class="lc">${t("featLbl")}</label></div>
+  <div class="row"><div><label>${t("c1")}</label><input type="color" id="f_c1" value="${x.couleur1}"></div><div><label>${t("c2")}</label><input type="color" id="f_c2" value="${x.couleur2}"></div></div>
+  <div class="fgroup">${t("notesGrp")}</div>
+  <div class="sw"><input type="checkbox" id="f_nconf" ${x.notes_a_confirmer ? "checked" : ""}><label for="f_nconf" class="lc">${t("nconf")}</label></div>
+  ${notesRow("tete", t("nTete"))}${notesRow("coeur", t("nCoeur"))}${notesRow("fond", t("nFond"))}
+  <div class="sw" style="margin-top:12px"><input type="checkbox" id="f_dispo" ${x.dispo ? "checked" : ""}><label for="f_dispo" class="lc">${t("dispo")}</label></div>
+  <div class="row" style="margin-top:16px;justify-content:space-between"><div class="row"><button class="btn btn-gold" id="f_save">${t("save")}</button><button class="btn btn-line" id="f_cancel">${t("cancel")}</button></div>${isNew ? "" : `<button class="btn btn-danger btn-sm" id="f_del">${t("del")}</button>`}</div>`;
+  const drawPh = () => { $("#f_photos").innerHTML = x.photos.map((u, i) => `<div class="ph"><img src="${esc(u)}" alt=""><button data-rm="${i}" aria-label="${t("remove")}">×</button></div>`).join("") || `<span class="meta">${t("noPhoto")}</span>`; };
   drawPh();
   $("#f_photos").onclick = e => { const b = e.target.closest("[data-rm]"); if (b){ x.photos.splice(+b.dataset.rm, 1); drawPh(); } };
   $("#f_add").onclick = () => $("#f_file").click();
@@ -225,95 +429,95 @@ function editProduct(p){
   $("#f_addurl").onclick = () => { const u = $("#f_url").value.trim(); if (u){ x.photos.push(u); $("#f_url").value = ""; drawPh(); } };
   $("#f_pct").oninput = e => { const v = +e.target.value, pr = +$("#f_prix").value; if (v > 0 && pr > 0) $("#f_promo").value = (Math.round(pr * (1 - v / 100) * 100) / 100); };
   $("#f_cancel").onclick = () => dlg.close();
-  if (!isNew) $("#f_del").onclick = () => { if (confirm("Supprimer définitivement cet article ?")) guard(async () => { await D.deleteProduct(x.id); await reloadP(); dlg.close(); render(); toast("Article supprimé"); }); };
+  if (!isNew) $("#f_del").onclick = () => { if (confirm(t("delConfirm"))) guard(async () => { await D.deleteProduct(x.id); await reloadP(); dlg.close(); render(); toast(t("deleted")); }); };
   const v = id => $("#" + id).value.trim();
   $("#f_save").onclick = () => guard(async () => {
-    const nom = v("f_nom_fr"); if (!nom) throw new Error("Le nom français est obligatoire (il sert de repli aux autres langues).");
+    const nom = v("f_nom_fr"); if (!nom) throw new Error(t("nameReq"));
     const prix = v("f_prix") === "" ? null : +v("f_prix");
-    if (prix !== null && !(prix >= 0)) throw new Error("Prix invalide.");
+    if (prix !== null && !(prix >= 0)) throw new Error(t("badPrice"));
     const promo = v("f_promo") === "" ? null : +v("f_promo");
-    if (promo !== null && (prix === null || promo >= prix)) throw new Error("Le prix promo doit être inférieur au prix (et le prix doit être renseigné).");
+    if (promo !== null && (prix === null || promo >= prix)) throw new Error(t("promoBad"));
     if (!x.id) x.id = (nom.toLowerCase().normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "") || "article") + "-" + Math.random().toString(36).slice(2, 6);
     const o = { categorie: v("f_cat"), genre: v("f_genre"), marque: v("f_marque"), contenance: v("f_cont"), concentration: v("f_conc"), demo: $("#f_demo").checked, prix, prix_promo: promo,
       stock: v("f_stock") === "" ? null : +v("f_stock"),
       variantes: v("f_vars") ? $("#f_vars").value.split("\n").map(l => l.trim()).filter(Boolean).map(l => { const [a, b, c, d] = l.split("|").map(t => t.trim()); const ov = (x.variantes || []).find(y => y.label === a) || {}; return { ...(ov.notes ? { notes: ov.notes, notes_en: ov.notes_en, notes_ar: ov.notes_ar } : {}), label: a, label_en: b || "", label_ar: c || "", prix: d ? +d : null }; }) : [],
-      vedette: $("#f_vedette").checked, couleur1: $("#f_c1").value, couleur2: $("#f_c2").value, notes_a_confirmer: $("#f_nconf").checked, dispo: $("#f_dispo").checked };
+      vedette: $("#f_vedette").checked, couleur1: $("#f_c1").value, couleur2: $("#f_c2").value, notes_a_confirmer: $("#f_nconf").checked, dispo: $("#f_dispo").checked, visible: $("#f_visible").checked };
     L3.forEach(([l]) => { ["nom:f_nom", "badge:f_badge", "variante_label:f_vl", "description:f_desc"].forEach(m => { const [f, id] = m.split(":"); o[f + sfx(l)] = v(id + "_" + l); }); });
     L3.forEach(([l]) => { const nk = l === "fr" ? "notes" : "notes_" + l; o[nk] = { tete: v("n_tete_" + l), coeur: v("n_coeur_" + l), fond: v("n_fond_" + l) }; });
     Object.assign(x, o);
     if (x.vedette && x.vedette_ordre >= 99) x.vedette_ordre = Date.now() % 100000;
     if (!x.vedette) x.vedette_ordre = 99;
-    await D.saveProduct(x); await reloadP(); dlg.close(); render(); toast("Article enregistré");
+    await D.saveProduct(x); await reloadP(); dlg.close(); render(); toast(t("savedP"));
   });
   dlg.showModal();
 }
 
 /* ---------- Catégories ---------- */
 function categories(){
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Catégories</h2><p class="hint">Renommez, réordonnez, masquez ou ajoutez des catégories. « Promos » se remplit automatiquement avec les articles ayant un prix promo. L'option « sous-filtres » affiche Homme / Femme / Mixte (les autres catégories ont leurs sous-filtres automatiquement).</p>
-  ${CATS.map((c, i) => `<div class="card" style="background:var(--panel2)"><div class="row"><div class="grow"><label>Nom (FR)</label><input type="text" data-k="nom" data-i="${i}" value="${esc(c.nom)}"></div><div class="grow"><label>Nom (EN) - vide = français</label><input type="text" data-k="nom_en" data-i="${i}" value="${esc(c.nom_en || "")}"></div><div class="grow"><label>Nom (AR) - vide = français</label><input dir="rtl" type="text" data-k="nom_ar" data-i="${i}" value="${esc(c.nom_ar || "")}"></div>
-  <div><label>Visuel par défaut</label><select data-k="icone" data-i="${i}">${["bottle","box","abaya","qamis","watch","rug","incense","tasbih"].map(k => `<option ${k === c.icone ? "selected" : ""}>${k}</option>`).join("")}</select></div></div>
-  <div class="row" style="margin-top:8px"><label class="sw" style="margin:0"><input type="checkbox" data-k="visible" data-i="${i}" ${c.visible !== false ? "checked" : ""}> Visible sur le site</label>
-  <label class="sw" style="margin:0"><input type="checkbox" data-k="sous_filtres" data-i="${i}" ${c.sous_filtres ? "checked" : ""}> Sous-filtres Homme/Femme/Mixte</label>
-  <span class="grow"></span><button class="ib" data-mv="-1" data-i="${i}" ${i === 0 ? "disabled" : ""}>↑</button><button class="ib" data-mv="1" data-i="${i}" ${i === CATS.length - 1 ? "disabled" : ""}>↓</button>${c.auto ? "" : `<button class="btn btn-danger btn-sm" data-del="${i}">Supprimer</button>`}</div></div>`).join("")}
-  <div class="row"><button class="btn btn-line" id="addCat">+ Ajouter une catégorie</button><button class="btn btn-gold" id="saveCats">Enregistrer les catégories</button></div></div>`;
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("catH")}</h2><p class="hint">${t("catHint")}</p>
+  ${CATS.map((c, i) => `<div class="card" style="background:var(--panel2)"><div class="row"><div class="grow"><label>${t("nameFr")}</label><input type="text" dir="ltr" data-k="nom" data-i="${i}" value="${esc(c.nom)}"></div><div class="grow"><label>${t("nameEn")}</label><input type="text" dir="ltr" data-k="nom_en" data-i="${i}" value="${esc(c.nom_en || "")}"></div><div class="grow"><label>${t("nameAr")}</label><input dir="rtl" type="text" data-k="nom_ar" data-i="${i}" value="${esc(c.nom_ar || "")}"></div>
+  <div><label>${t("defVisual")}</label><select data-k="icone" data-i="${i}">${["bottle","box","abaya","qamis","watch","rug","incense","tasbih"].map(k => `<option value="${k}" ${k === c.icone ? "selected" : ""}>${t("ic_" + k)}</option>`).join("")}</select></div></div>
+  <div class="row" style="margin-top:8px"><label class="sw" style="margin:0"><input type="checkbox" data-k="visible" data-i="${i}" ${c.visible !== false ? "checked" : ""}> ${t("visible")}</label>
+  <label class="sw" style="margin:0"><input type="checkbox" data-k="sous_filtres" data-i="${i}" ${c.sous_filtres ? "checked" : ""}> ${t("subf")}</label>
+  <span class="grow"></span><button class="ib" data-mv="-1" data-i="${i}" ${i === 0 ? "disabled" : ""} aria-label="${t("up")}">↑</button><button class="ib" data-mv="1" data-i="${i}" ${i === CATS.length - 1 ? "disabled" : ""} aria-label="${t("down")}">↓</button>${c.auto ? "" : `<button class="btn btn-danger btn-sm" data-del="${i}">${t("del")}</button>`}</div></div>`).join("")}
+  <div class="row"><button class="btn btn-line" id="addCat">${t("addCat")}</button><button class="btn btn-gold" id="saveCats">${t("saveCats")}</button></div></div>`;
   const v = $("#view");
-  v.oninput = v.onchange = e => { const t = e.target; if (t.dataset.k) CATS[+t.dataset.i][t.dataset.k] = t.type === "checkbox" ? t.checked : t.value; };
+  v.oninput = v.onchange = e => { const el = e.target; if (el.dataset.k) CATS[+el.dataset.i][el.dataset.k] = el.type === "checkbox" ? el.checked : el.value; };
   v.onclick = e => { const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.mv){ const i = +b.dataset.i, j = i + +b.dataset.mv; [CATS[i], CATS[j]] = [CATS[j], CATS[i]]; categories(); }
-    if (b.dataset.del){ const c = CATS[+b.dataset.del]; if (PRODS.some(p => p.categorie === c.id)) return toast("Déplacez d'abord les articles de cette catégorie.", true); if (confirm("Supprimer la catégorie ?")){ CATS.splice(+b.dataset.del, 1); categories(); } }
-    if (b.id === "addCat"){ CATS.splice(CATS.length - (CATS[CATS.length - 1]?.auto ? 1 : 0), 0, { id: "cat-" + Math.random().toString(36).slice(2, 7), nom: "Nouvelle catégorie", nom_en: "New category", nom_ar: "", icone: "box", visible: true, ordre: CATS.length }); categories(); }
-    if (b.id === "saveCats") guard(async () => { await D.saveCategories(CATS); CATS = await D.getCategories(); toast("Catégories enregistrées"); categories(); }); };
+    if (b.dataset.del){ const c = CATS[+b.dataset.del]; if (PRODS.some(p => p.categorie === c.id)) return toast(t("catMoveFirst"), true); if (confirm(t("catDel"))){ CATS.splice(+b.dataset.del, 1); categories(); } }
+    if (b.id === "addCat"){ CATS.splice(CATS.length - (CATS[CATS.length - 1]?.auto ? 1 : 0), 0, { id: "cat-" + Math.random().toString(36).slice(2, 7), nom: "Nouvelle catégorie", nom_en: "New category", nom_ar: "فئة جديدة", icone: "box", visible: true, ordre: CATS.length }); categories(); }
+    if (b.id === "saveCats") guard(async () => { await D.saveCategories(CATS); CATS = await D.getCategories(); toast(t("catSaved")); categories(); }); };
 }
 
 /* ---------- Promos ---------- */
 function promos(){
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Promos</h2><p class="hint">Saisissez un prix promo ou un pourcentage : le prix barré et le badge -% apparaissent sur le site et dans la catégorie « Promos ». Videz le champ pour retirer la promo.</p>
-  <table class="tbl"><tr><th>Article</th><th>Prix</th><th>Prix promo</th><th>%</th></tr>${PRODS.map((p, i) => `<tr><td>${esc(p.nom)}</td><td>${D.hasPrice(p.prix) ? p.prix : "<i>sur demande</i>"}</td>
-  <td><input type="number" step="0.01" style="width:100px" data-pr="${i}" value="${p.prix_promo ?? ""}" ${D.hasPrice(p.prix) ? "" : "disabled"}></td><td><input type="number" style="width:80px" data-pc="${i}" value="${D.pct(p) || ""}" placeholder="%"></td></tr>`).join("")}</table>
-  <div class="row" style="margin-top:12px"><button class="btn btn-gold" id="saveP">Enregistrer les promos</button></div></div>`;
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("prH")}</h2><p class="hint">${t("prHint")}</p>
+  <div class="tblw"><table class="tbl"><tr><th>${t("thArt")}</th><th>${t("thPrice")}</th><th>${t("thPromo")}</th><th>%</th></tr>${PRODS.map((p, i) => `<tr><td>${esc(p.nom)}${p.visible === false ? ` <span class="pill hidp">${t("hidden")}</span>` : ""}</td><td>${D.hasPrice(p.prix) ? p.prix : `<i>${t("onRequestLc")}</i>`}</td>
+  <td><input type="number" step="0.01" style="width:100px" data-pr="${i}" value="${p.prix_promo ?? ""}" ${D.hasPrice(p.prix) ? "" : "disabled"}></td><td><input type="number" style="width:80px" data-pc="${i}" value="${D.pct(p) || ""}" placeholder="%"></td></tr>`).join("")}</table></div>
+  <div class="row" style="margin-top:12px"><button class="btn btn-gold" id="saveP">${t("saveP")}</button></div></div>`;
   const v = $("#view");
-  v.oninput = e => { const t = e.target; if (t.dataset.pr !== undefined){ const p = PRODS[+t.dataset.pr]; p.prix_promo = t.value === "" ? null : +t.value; const c = v.querySelector(`[data-pc="${t.dataset.pr}"]`); c.value = D.pct(p) || ""; }
-    if (t.dataset.pc !== undefined){ const p = PRODS[+t.dataset.pc]; const n = +t.value; p.prix_promo = n > 0 && D.hasPrice(p.prix) ? Math.round(p.prix * (1 - n / 100) * 100) / 100 : null; v.querySelector(`[data-pr="${t.dataset.pc}"]`).value = p.prix_promo ?? ""; } };
-  $("#saveP").onclick = () => guard(async () => { if (PRODS.some(p => D.hasPrice(p.prix_promo) && p.prix_promo >= p.prix)) throw new Error("Un prix promo doit être inférieur au prix."); await D.saveProducts(PRODS); await reloadP(); toast("Promos enregistrées"); });
+  v.oninput = e => { const el = e.target; if (el.dataset.pr !== undefined){ const p = PRODS[+el.dataset.pr]; p.prix_promo = el.value === "" ? null : +el.value; const c = v.querySelector(`[data-pc="${el.dataset.pr}"]`); c.value = D.pct(p) || ""; }
+    if (el.dataset.pc !== undefined){ const p = PRODS[+el.dataset.pc]; const n = +el.value; p.prix_promo = n > 0 && D.hasPrice(p.prix) ? Math.round(p.prix * (1 - n / 100) * 100) / 100 : null; v.querySelector(`[data-pr="${el.dataset.pc}"]`).value = p.prix_promo ?? ""; } };
+  $("#saveP").onclick = () => guard(async () => { if (PRODS.some(p => D.hasPrice(p.prix_promo) && p.prix_promo >= p.prix)) throw new Error(t("promoErr")); await D.saveProducts(PRODS); await reloadP(); toast(t("promoSaved")); });
 }
 
 /* ---------- Parfums vedettes ---------- */
 function vedettes(){
   const feat = PRODS.filter(p => p.vedette).sort((a, b) => a.vedette_ordre - b.vedette_ordre);
   const others = PRODS.filter(p => !p.vedette);
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Parfums vedettes du carrousel 3D</h2><p class="hint">${feat.length} vedette(s) (6 recommandés ; maximum 8 affichés). Chaque flacon 3D prend les couleurs choisies ici ; le texte « profil olfactif » vient des notes.</p>
-  ${feat.map((p, i) => `<div class="card" style="background:var(--panel2)"><div class="row"><b class="grow">${i + 1}. ${esc(p.nom)}</b><button class="ib" data-mv="-1" data-id="${esc(p.id)}" ${i === 0 ? "disabled" : ""}>↑</button><button class="ib" data-mv="1" data-id="${esc(p.id)}" ${i === feat.length - 1 ? "disabled" : ""}>↓</button><button class="btn btn-line btn-sm" data-rm="${esc(p.id)}">Retirer</button></div>
-  <div class="row"><div><label>Primaire</label><input type="color" data-c="couleur1" data-id="${esc(p.id)}" value="${p.couleur1}"></div><div><label>Secondaire</label><input type="color" data-c="couleur2" data-id="${esc(p.id)}" value="${p.couleur2}"></div>
-  <div class="grow"><label>Tête</label><input type="text" data-n="tete" data-id="${esc(p.id)}" value="${esc(p.notes.tete)}"></div><div class="grow"><label>Cœur</label><input type="text" data-n="coeur" data-id="${esc(p.id)}" value="${esc(p.notes.coeur)}"></div><div class="grow"><label>Fond</label><input type="text" data-n="fond" data-id="${esc(p.id)}" value="${esc(p.notes.fond)}"></div></div></div>`).join("")}
-  <div class="row"><select id="addV" class="grow"><option value="">Ajouter un article en vedette…</option>${others.map(p => `<option value="${esc(p.id)}">${esc(p.nom)}</option>`).join("")}</select><button class="btn btn-line" id="addVb">Ajouter</button><button class="btn btn-gold" id="saveV">Enregistrer</button></div></div>`;
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("vH")}</h2><p class="hint">${t("vHint", { n: feat.filter(p => p.visible !== false).length })}</p>
+  ${feat.map((p, i) => `<div class="card" style="background:var(--panel2)"><div class="row"><b class="grow">${i + 1}. ${esc(p.nom)}${p.visible === false ? ` <span class="pill hidp">${t("hidden")}</span>` : ""}</b><button class="ib" data-mv="-1" data-id="${esc(p.id)}" ${i === 0 ? "disabled" : ""} aria-label="${t("up")}">↑</button><button class="ib" data-mv="1" data-id="${esc(p.id)}" ${i === feat.length - 1 ? "disabled" : ""} aria-label="${t("down")}">↓</button><button class="btn btn-line btn-sm" data-rm="${esc(p.id)}">${t("remove")}</button></div>
+  <div class="row"><div><label>${t("prim")}</label><input type="color" data-c="couleur1" data-id="${esc(p.id)}" value="${p.couleur1}"></div><div><label>${t("sec")}</label><input type="color" data-c="couleur2" data-id="${esc(p.id)}" value="${p.couleur2}"></div>
+  <div class="grow"><label>${t("head")}</label><input type="text" data-n="tete" data-id="${esc(p.id)}" value="${esc(p.notes.tete)}"></div><div class="grow"><label>${t("heart")}</label><input type="text" data-n="coeur" data-id="${esc(p.id)}" value="${esc(p.notes.coeur)}"></div><div class="grow"><label>${t("base")}</label><input type="text" data-n="fond" data-id="${esc(p.id)}" value="${esc(p.notes.fond)}"></div></div></div>`).join("")}
+  <div class="row"><select id="addV" class="grow"><option value="">${t("addV")}</option>${others.map(p => `<option value="${esc(p.id)}">${esc(p.nom)}${p.visible === false ? " (" + t("hidden") + ")" : ""}</option>`).join("")}</select><button class="btn btn-line" id="addVb">${t("add")}</button><button class="btn btn-gold" id="saveV">${t("save")}</button></div></div>`;
   const v = $("#view"), get = id => PRODS.find(p => p.id === id);
-  v.oninput = e => { const t = e.target, p = get(t.dataset.id); if (!p) return; if (t.dataset.c) p[t.dataset.c] = t.value; if (t.dataset.n) p.notes[t.dataset.n] = t.value; };
+  v.oninput = e => { const el = e.target, p = get(el.dataset.id); if (!p) return; if (el.dataset.c) p[el.dataset.c] = el.value; if (el.dataset.n) p.notes[el.dataset.n] = el.value; };
   v.onclick = e => { const b = e.target.closest("button"); if (!b) return;
-    if (b.dataset.mv){ const i = feat.findIndex(p => p.id === b.dataset.id), j = i + +b.dataset.mv; feat.forEach((p, k) => p.vedette_ordre = k); const t = feat[i].vedette_ordre; feat[i].vedette_ordre = feat[j].vedette_ordre; feat[j].vedette_ordre = t; vedettes(); }
+    if (b.dataset.mv){ const i = feat.findIndex(p => p.id === b.dataset.id), j = i + +b.dataset.mv; feat.forEach((p, k) => p.vedette_ordre = k); const tmp = feat[i].vedette_ordre; feat[i].vedette_ordre = feat[j].vedette_ordre; feat[j].vedette_ordre = tmp; vedettes(); }
     if (b.dataset.rm){ const p = get(b.dataset.rm); p.vedette = false; p.vedette_ordre = 99; vedettes(); }
     if (b.id === "addVb" && $("#addV").value){ const p = get($("#addV").value); p.vedette = true; p.vedette_ordre = feat.length + 1; vedettes(); }
-    if (b.id === "saveV") guard(async () => { if (!PRODS.some(p => p.vedette)) throw new Error("Gardez au moins un parfum en vedette."); await D.saveProducts(PRODS); await reloadP(); toast("Vedettes enregistrées"); vedettes(); }); };
+    if (b.id === "saveV") guard(async () => { if (!PRODS.some(p => p.vedette && p.visible !== false)) throw new Error(t("vErr")); await D.saveProducts(PRODS); await reloadP(); toast(t("vSaved")); vedettes(); }); };
 }
 
 /* ---------- Textes & FAQ (3 langues) ---------- */
 function textes(){
-  const groups = [...new Set(D.TEXT_KEYS.map(t => t.group))];
-  const field = (t, l, T) => { const cur = S.textes[t.key] || {}, val = cur[l] ?? t[l]; const dir = l === "ar" ? ' dir="rtl"' : "";
-    return `<div><label>${T}</label>${t.multi ? `<textarea${dir} data-t="${esc(t.key)}" data-l="${l}">${esc(val)}</textarea>` : `<input${dir} type="text" data-t="${esc(t.key)}" data-l="${l}" value="${esc(val)}">`}</div>`; };
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Textes du site (AR / EN / FR)</h2><p class="hint">Tous les textes du site sont modifiables, dans les 3 langues. Chaque champ affiche le texte actuel. Videz un champ pour revenir au texte d'origine de cette langue. L'arabe s'affiche de droite à gauche. Les groupes se déplient en cliquant sur leur titre.</p>
-  <div class="row" style="margin-bottom:10px"><input class="grow" type="text" id="tq" placeholder="Rechercher un texte (ex. panier, WhatsApp, Add to cart…)"></div>
-  ${groups.map(g => `<details class="tgrp"><summary class="fgroup" style="cursor:pointer">${esc(g)}</summary>${D.TEXT_KEYS.filter(t => t.group === g).map(t => `<div class="trow" data-search="${esc((t.key + " " + t.fr + " " + t.en + " " + t.ar).toLowerCase())}"><div class="meta" style="margin-top:12px"><code>${esc(t.key)}</code></div><div class="g3">${field(t, "fr", "Français (FR)")}${field(t, "en", "English (EN)")}${field(t, "ar", "العربية (AR)")}</div></div>`).join("")}</details>`).join("")}
-  <details class="tgrp" open><summary class="fgroup" style="cursor:pointer">Foire aux questions (FAQ)</summary><div id="faqBox"></div><button class="btn btn-line btn-sm" id="addFaq" style="margin-top:8px">+ Ajouter une question</button></details>
-  <div class="row" style="margin-top:16px"><button class="btn btn-gold" id="saveT">Enregistrer les textes</button></div></div>`;
-  const tri = (f, i, k, multi, label) => `<div class="g3">${L3.map(([l, T]) => { const val = (f[k] && f[k][l]) || ""; const dir = l === "ar" ? ' dir="rtl"' : ""; return `<div><label>${label} (${T})</label>${multi ? `<textarea${dir} data-f="${k}" data-fl="${l}" data-i="${i}">${esc(val)}</textarea>` : `<input${dir} type="text" data-f="${k}" data-fl="${l}" data-i="${i}" value="${esc(val)}">`}</div>`; }).join("")}</div>`;
-  const drawFaq = () => { $("#faqBox").innerHTML = S.faq.map((f, i) => `<div class="card" style="background:var(--panel2)">${tri(f, i, "q", false, "Question")}${tri(f, i, "a", true, "Réponse")}
-    <div class="row" style="margin-top:6px"><button class="ib" data-fm="-1" data-i="${i}" ${i === 0 ? "disabled" : ""}>↑</button><button class="ib" data-fm="1" data-i="${i}" ${i === S.faq.length - 1 ? "disabled" : ""}>↓</button><button class="btn btn-danger btn-sm" data-fd="${i}">Supprimer</button></div></div>`).join(""); };
+  const groups = [...new Set(D.TEXT_KEYS.map(x => x.group))];
+  const field = (k, l, T) => { const cur = S.textes[k.key] || {}, val = cur[l] ?? k[l]; const dir = dirOf(l);
+    return `<div><label>${T}</label>${k.multi ? `<textarea${dir} data-t="${esc(k.key)}" data-l="${l}">${esc(val)}</textarea>` : `<input${dir} type="text" data-t="${esc(k.key)}" data-l="${l}" value="${esc(val)}">`}</div>`; };
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("tH")}</h2><p class="hint">${t("tHint")}</p>
+  <div class="row" style="margin-bottom:10px"><input class="grow" type="text" id="tq" placeholder="${esc(t("tSearch"))}"></div>
+  ${groups.map(g => `<details class="tgrp"><summary class="fgroup" style="cursor:pointer">${esc(grp(g))}</summary>${D.TEXT_KEYS.filter(k => k.group === g).map(k => `<div class="trow" data-search="${esc((k.key + " " + k.fr + " " + k.en + " " + k.ar).toLowerCase())}"><div class="meta" style="margin-top:12px" dir="ltr"><code>${esc(k.key)}</code></div><div class="g3">${field(k, "fr", "Français (FR)")}${field(k, "en", "English (EN)")}${field(k, "ar", "العربية (AR)")}</div></div>`).join("")}</details>`).join("")}
+  <details class="tgrp" open><summary class="fgroup" style="cursor:pointer">${t("faq")}</summary><div id="faqBox"></div><button class="btn btn-line btn-sm" id="addFaq" style="margin-top:8px">${t("addFaq")}</button></details>
+  <div class="row" style="margin-top:16px"><button class="btn btn-gold" id="saveT">${t("saveT")}</button></div></div>`;
+  const tri = (f, i, k, multi, label) => `<div class="g3">${L3.map(([l, T]) => { const val = (f[k] && f[k][l]) || ""; const dir = dirOf(l); return `<div><label>${label} (${T})</label>${multi ? `<textarea${dir} data-f="${k}" data-fl="${l}" data-i="${i}">${esc(val)}</textarea>` : `<input${dir} type="text" data-f="${k}" data-fl="${l}" data-i="${i}" value="${esc(val)}">`}</div>`; }).join("")}</div>`;
+  const drawFaq = () => { $("#faqBox").innerHTML = S.faq.map((f, i) => `<div class="card" style="background:var(--panel2)">${tri(f, i, "q", false, t("question"))}${tri(f, i, "a", true, t("answer"))}
+    <div class="row" style="margin-top:6px"><button class="ib" data-fm="-1" data-i="${i}" ${i === 0 ? "disabled" : ""} aria-label="${t("up")}">↑</button><button class="ib" data-fm="1" data-i="${i}" ${i === S.faq.length - 1 ? "disabled" : ""} aria-label="${t("down")}">↓</button><button class="btn btn-danger btn-sm" data-fd="${i}">${t("del")}</button></div></div>`).join(""); };
   S.faq = S.faq.map(f => ({ q: typeof f.q === "string" ? { fr: f.q, en: "", ar: f.q_ar || "" } : f.q, a: typeof f.a === "string" ? { fr: f.a, en: "", ar: f.a_ar || "" } : f.a }));
   drawFaq();
   const v = $("#view");
   $("#tq").oninput = e => { const q = e.target.value.trim().toLowerCase(); v.querySelectorAll(".trow").forEach(r => r.hidden = !!q && !r.dataset.search.includes(q)); if (q) v.querySelectorAll("details.tgrp").forEach(d => { if (d.querySelector(".trow:not([hidden])")) d.open = true; }); };
-  v.oninput = e => { const t = e.target; if (t.dataset.t){ const o = S.textes[t.dataset.t] = S.textes[t.dataset.t] || {}; o[t.dataset.l] = t.value; } if (t.dataset.f) { const f = S.faq[+t.dataset.i]; (f[t.dataset.f] = f[t.dataset.f] || {})[t.dataset.fl] = t.value; } };
+  v.oninput = e => { const el = e.target; if (el.dataset.t){ const o = S.textes[el.dataset.t] = S.textes[el.dataset.t] || {}; o[el.dataset.l] = el.value; } if (el.dataset.f) { const f = S.faq[+el.dataset.i]; (f[el.dataset.f] = f[el.dataset.f] || {})[el.dataset.fl] = el.value; } };
   v.onclick = e => { const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.fm){ const i = +b.dataset.i, j = i + +b.dataset.fm; [S.faq[i], S.faq[j]] = [S.faq[j], S.faq[i]]; drawFaq(); }
     if (b.dataset.fd){ S.faq.splice(+b.dataset.fd, 1); drawFaq(); }
@@ -323,54 +527,54 @@ function textes(){
 
 /* ---------- Images ---------- */
 function images(){
-  const slots = [["logo","Logo (barre de navigation, chargement, favicon visuel, pied de page)","logo"],["og","Image de partage (réseaux sociaux / WhatsApp)","og"],...[0,1,2,3,4].map(i => ["b" + i, "Photo de la boutique " + (i + 1), i])];
+  const slots = [["logo", t("sLogo")], ["og", t("sOg")], ...[0,1,2,3,4].map(i => ["b" + i, t("sShop", { n: i + 1 })])];
   const get = k => k === "logo" ? S.images.logo : k === "og" ? S.images.og : S.images.boutique[+k.slice(1)];
-  const set = (k, v) => { if (k === "logo") S.images.logo = v; else if (k === "og") S.images.og = v; else S.images.boutique[+k.slice(1)] = v; };
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Logo & photos</h2><p class="hint">Téléversez une image ou collez son adresse. Les photos de la boutique apparaissent dans la section « La boutique » et dans le pied de page.</p>
-  ${slots.map(([k, l]) => `<div class="imgrow"><img src="${esc(get(k))}" alt=""><div><b>${l}</b><div class="row" style="margin-top:6px"><input type="file" accept="image/*" data-file="${k}" hidden><button class="btn btn-line btn-sm" data-up="${k}">Remplacer</button><input type="url" class="grow" data-url="${k}" value="${/^data:/.test(get(k)) ? "" : esc(get(k))}" placeholder="adresse de l'image"><button class="btn btn-line btn-sm" data-ok="${k}">OK</button></div></div></div>`).join("")}
-  <div class="row"><button class="btn btn-gold" id="saveI">Enregistrer</button><button class="btn btn-line" id="defI">Remettre les images d'origine</button></div></div>`;
+  const set = (k, val) => { if (k === "logo") S.images.logo = val; else if (k === "og") S.images.og = val; else S.images.boutique[+k.slice(1)] = val; };
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("iH")}</h2><p class="hint">${t("iHint")}</p>
+  ${slots.map(([k, l]) => `<div class="imgrow"><img src="${esc(get(k))}" alt=""><div><b>${l}</b><div class="row" style="margin-top:6px"><input type="file" accept="image/*" data-file="${k}" hidden><button class="btn btn-line btn-sm" data-up="${k}">${t("replace")}</button><input type="url" class="grow" data-url="${k}" value="${/^data:/.test(get(k)) ? "" : esc(get(k))}" placeholder="${esc(t("imgUrl"))}"><button class="btn btn-line btn-sm" data-ok="${k}">OK</button></div></div></div>`).join("")}
+  <div class="row"><button class="btn btn-gold" id="saveI">${t("save")}</button><button class="btn btn-line" id="defI">${t("resetImg")}</button></div></div>`;
   const v = $("#view");
   v.onclick = e => { const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.up) v.querySelector(`[data-file="${b.dataset.up}"]`).click();
     if (b.dataset.ok){ set(b.dataset.ok, v.querySelector(`[data-url="${b.dataset.ok}"]`).value.trim() || get(b.dataset.ok)); images(); }
     if (b.id === "saveI") saveS();
     if (b.id === "defI"){ S.images = JSON.parse(JSON.stringify(D.DEFAULT_SETTINGS.images)); images(); } };
-  v.onchange = e => { const k = e.target.dataset.file; if (!k) return; guard(async () => { set(k, await D.uploadImage(e.target.files[0], k === "logo" ? 600 : 1100)); images(); toast("Image prête : cliquez sur Enregistrer"); }); };
+  v.onchange = e => { const k = e.target.dataset.file; if (!k) return; guard(async () => { set(k, await D.uploadImage(e.target.files[0], k === "logo" ? 600 : 1100)); images(); toast(t("imgReady")); }); };
 }
 
 /* ---------- Liens & contact ---------- */
 function liens(){
   const L = S.liens, f = (id, label, val, ph, type) => `<div><label>${label}</label><input type="${type || "text"}" id="${id}" value="${esc(val)}" placeholder="${esc(ph || "")}"></div>`;
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Liens & contact</h2><p class="hint">Un lien laissé vide est masqué sur le site (Snapchat, Avis Google et Itinéraire sont vides pour l'instant). Le lien Facebook est provisoire (recherche « BAKKAH ») : à remplacer par l'adresse exacte de la page.</p>
-  <div class="fgroup">Commande WhatsApp</div>
-  <div class="g2">${f("s_wa", "Numéro WhatsApp de la boutique (indicatif pays, sans +, ex. 212671501152)", S.whatsapp, "212671501152")}${f("s_devise", "Devise (vide = « DH » / « درهم » selon la langue ; modifiable aussi dans Textes > meta.currency)", S.devise, "DH")}</div>
-  <div class="fgroup">Boutique</div><div class="g2">${f("s_nom", "Nom de la boutique", S.nom)}${f("s_tel", "Téléphone (appel direct)", S.telephone, "+212 6 71 50 11 52")}${f("s_adr", "Adresse (vide = « Maroc » provisoire)", S.adresse)}${f("s_hor", "Horaires (vide = « Lun–Sam 10h–21h » provisoire)", S.horaires)}</div>
-  <div class="fgroup">Liens</div><div class="g2">${f("l_instagram", "Instagram", L.instagram, "https://instagram.com/…", "url")}${f("l_tiktok", "TikTok", L.tiktok, "https://tiktok.com/@…", "url")}${f("l_snapchat", "Snapchat", L.snapchat, "https://snapchat.com/add/…", "url")}${f("l_facebook", "Facebook", L.facebook, "https://facebook.com/…", "url")}
-  ${f("l_whatsapp", "Lien WhatsApp (vide = automatique avec le numéro)", L.whatsapp, "https://wa.me/…", "url")}${f("l_avis", "Avis Google", L.avis, "lien de votre fiche Google", "url")}${f("l_itineraire", "Itinéraire (Google Maps)", L.itineraire, "lien Google Maps", "url")}</div>
-  <div class="sw" style="margin-top:12px"><input type="checkbox" id="s_news" ${S.newsletter ? "checked" : ""}><label for="s_news" style="margin:0;font-size:14px;color:var(--ink)">Afficher l'inscription newsletter</label></div>
-  <div class="row" style="margin-top:14px"><button class="btn btn-gold" id="saveL">Enregistrer</button></div></div>`;
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("lH")}</h2><p class="hint">${t("lHint")}</p>
+  <div class="fgroup">${t("gWa")}</div>
+  <div class="g2">${f("s_wa", t("waNum"), S.whatsapp, "212671501152")}${f("s_devise", t("currency"), S.devise, "DH")}</div>
+  <div class="fgroup">${t("gShop")}</div><div class="g2">${f("s_nom", t("shopName"), S.nom)}${f("s_tel", t("phone"), S.telephone, "+212 6 71 50 11 52")}${f("s_adr", t("addr"), S.adresse)}${f("s_hor", t("hours"), S.horaires)}</div>
+  <div class="fgroup">${t("gLinks")}</div><div class="g2">${f("l_instagram", "Instagram", L.instagram, "https://instagram.com/…", "url")}${f("l_tiktok", "TikTok", L.tiktok, "https://tiktok.com/@…", "url")}${f("l_snapchat", "Snapchat", L.snapchat, "https://snapchat.com/add/…", "url")}${f("l_facebook", "Facebook", L.facebook, "https://facebook.com/…", "url")}
+  ${f("l_whatsapp", t("waLink"), L.whatsapp, "https://wa.me/…", "url")}${f("l_avis", t("reviews"), L.avis, t("reviewsPh"), "url")}${f("l_itineraire", t("route"), L.itineraire, t("routePh"), "url")}</div>
+  <div class="sw" style="margin-top:12px"><input type="checkbox" id="s_news" ${S.newsletter ? "checked" : ""}><label for="s_news" class="lc">${t("news")}</label></div>
+  <div class="row" style="margin-top:14px"><button class="btn btn-gold" id="saveL">${t("save")}</button></div></div>`;
   $("#saveL").onclick = () => { const g = id => $("#" + id).value.trim();
     Object.assign(S, { whatsapp: g("s_wa").replace(/\D/g, ""), devise: g("s_devise"), nom: g("s_nom") || "BAKKAH", telephone: g("s_tel"), adresse: g("s_adr"), horaires: g("s_hor"), newsletter: $("#s_news").checked });
-    const bad = []; const liens = {};
-    ["instagram","tiktok","snapchat","facebook","whatsapp","avis","itineraire"].forEach(k => { const v = g("l_" + k); if (v && !D.safeLink(v)) { bad.push(k); $("#l_" + k).style.borderColor = "#c0392b"; } else { liens[k] = v; $("#l_" + k).style.borderColor = ""; } });
-    if (bad.length) return toast("Lien refusé (" + bad.join(", ") + ") : seuls les liens commençant par https://, http://, tel: ou mailto: sont acceptés. Rien n'a été enregistré.", true);
-    Object.assign(S.liens, liens); saveS(); };
+    const bad = []; const lk = {};
+    ["instagram","tiktok","snapchat","facebook","whatsapp","avis","itineraire"].forEach(k => { const val = g("l_" + k); if (val && !D.safeLink(val)) { bad.push(k); $("#l_" + k).style.borderColor = "#c0392b"; } else { lk[k] = val; $("#l_" + k).style.borderColor = ""; } });
+    if (bad.length) return toast(t("linkBad", { k: bad.join(", ") }), true);
+    Object.assign(S.liens, lk); saveS(); };
 }
 
 /* ---------- Données & sécurité ---------- */
 async function donnees(){
   const subs = await D.getSubscribers();
-  $("#view").innerHTML = `<div class="card"><h2 class="serif">Sauvegarde</h2><p class="hint">Téléchargez une copie de tout le contenu (articles, catégories, textes) ou restaurez-la.</p>
-  <div class="row"><button class="btn btn-line" id="exp">Télécharger la sauvegarde</button><input type="file" id="impF" accept="application/json" hidden><button class="btn btn-line" id="imp">Restaurer une sauvegarde</button>${D.mode === "local" ? '<button class="btn btn-danger" id="rst">Remettre les données de démonstration</button>' : ""}</div></div>
-  <div class="card"><h2 class="serif">Newsletter</h2><p class="hint">${subs.length} inscrit(s).</p>${subs.length ? `<button class="btn btn-line btn-sm" id="csv">Télécharger la liste (CSV)</button>` : ""}</div>
-  <div class="card"><h2 class="serif">Mot de passe</h2>${D.mode === "local" ? `<p class="hint">Protection de l'espace vendeur dans ce navigateur. Pour une vraie sécurité partagée, utilisez Supabase.</p><div class="g2"><div><label>Nouveau mot de passe</label><input type="password" id="np"></div><div><label>Confirmer</label><input type="password" id="np2"></div></div><div class="row" style="margin-top:12px"><button class="btn btn-gold" id="chpw">Changer le mot de passe</button></div>` : `<p class="hint">Le mot de passe se gère dans Supabase (Authentication → Users).</p>`}</div>`;
+  $("#view").innerHTML = `<div class="card"><h2 class="serif">${t("bH")}</h2><p class="hint">${t("bHint")}</p>
+  <div class="row"><button class="btn btn-line" id="exp">${t("exp")}</button><input type="file" id="impF" accept="application/json" hidden><button class="btn btn-line" id="imp">${t("imp")}</button>${D.mode === "local" ? `<button class="btn btn-danger" id="rst">${t("rst")}</button>` : ""}</div></div>
+  <div class="card"><h2 class="serif">${t("nlH")}</h2><p class="hint">${t("subs", { n: subs.length })}</p>${subs.length ? `<button class="btn btn-line btn-sm" id="csv">${t("csv")}</button>` : ""}</div>
+  <div class="card"><h2 class="serif">${t("pwH")}</h2>${D.mode === "local" ? `<p class="hint">${t("pwLocal")}</p><div class="g2"><div><label>${t("pwNew")}</label><input type="password" id="np"></div><div><label>${t("pwConf")}</label><input type="password" id="np2"></div></div><div class="row" style="margin-top:12px"><button class="btn btn-gold" id="chpw">${t("pwChange")}</button></div>` : `<p class="hint">${t("pwLive")}</p>`}</div>`;
   const dl = (name, text, type) => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); };
   $("#exp").onclick = () => guard(async () => dl("bakkah-sauvegarde.json", JSON.stringify(await D.exportAll(), null, 1), "application/json"));
   $("#imp").onclick = () => $("#impF").click();
-  $("#impF").onchange = e => guard(async () => { const d = JSON.parse(await e.target.files[0].text()); if (!confirm("Remplacer le contenu actuel par cette sauvegarde ?")) return; await D.importAll(d); location.reload(); });
-  if ($("#rst")) $("#rst").onclick = () => { if (confirm("Effacer vos modifications locales et revenir aux données de démonstration ?")){ D.resetDemo(); location.reload(); } };
+  $("#impF").onchange = e => guard(async () => { const d = JSON.parse(await e.target.files[0].text()); if (!confirm(t("impConfirm"))) return; await D.importAll(d); location.reload(); });
+  if ($("#rst")) $("#rst").onclick = () => { if (confirm(t("rstConfirm"))){ D.resetDemo(); location.reload(); } };
   if ($("#csv")) $("#csv").onclick = () => dl("newsletter.csv", "email,date\n" + subs.map(s => `${s.email},${s.date || s.created_at || ""}`).join("\n"), "text/csv");
-  if ($("#chpw")) $("#chpw").onclick = () => guard(async () => { const a = $("#np").value; if (a.length < 6) throw new Error("6 caractères minimum."); if (a !== $("#np2").value) throw new Error("Les deux mots de passe sont différents."); await D.setPassword(a); toast("Mot de passe changé"); });
+  if ($("#chpw")) $("#chpw").onclick = () => guard(async () => { const a = $("#np").value; if (a.length < 6) throw new Error(t("pwMin")); if (a !== $("#np2").value) throw new Error(t("pwDiff")); await D.setPassword(a); toast(t("pwChanged")); });
 }
 
 boot();

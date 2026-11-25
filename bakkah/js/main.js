@@ -39,6 +39,8 @@ requestAnimationFrame(loaderTick);
 let S, cats, prods;
 try { [S, cats, prods] = await Promise.all([D.getSettings(), D.getCategories(), D.getProducts()]); }
 catch (e) { console.error(e); S = D.DEFAULT_SETTINGS; cats = D.DEFAULT_CATEGORIES; prods = D.DEFAULT_PRODUCTS; errors.push("data"); }
+/* articles masqués par le vendeur (visible === false) : absents de toute la boutique, vedettes comprises ; champ absent = visible */
+prods = prods.filter(p => p.visible !== false);
 done("data");
 const shop = createShop({ S, cats, prods, lang });
 window.addEventListener("storage", e => { if (["bk2_settings", "bk2_categories", "bk2_products"].includes(e.key)) location.reload(); });
@@ -58,6 +60,9 @@ let featured = prods.filter(p => p.vedette && p.dispo !== false).sort((a, b) => 
 if (!featured.length) featured = prods.filter(p => p.categorie === "parfums").slice(0, 6);
 if (!featured.length) featured = prods.slice(0, 3);
 featured = featured.map(p => ({ ...p, couleur2: accent(p) }));
+/* aucun article visible : flacon neutre aux couleurs Bakkah (la page se charge quand même, catalogue vide + message « bientôt disponible ») */
+const EMPTY = !featured.length;
+if (EMPTY) featured = [{ id: "_bakkah", nom: "BAKKAH", nom_en: "BAKKAH", nom_ar: "بكة", categorie: "", couleur1: "#4a3a1a", couleur2: "#d4af37", notes: {}, placeholder: true }];
 const M = featured.length;
 const nm = o => D.tr(o, "nom", lang);
 const catOf = p => cats.find(c => c.id === p.categorie);
@@ -126,8 +131,8 @@ function updateHero(i, delta, instant) {
   const [l1, l2] = titleParts(p);
   [[$(".l1"), l1], [$(".l2"), l2]].forEach(([el, tx]) => { setText(el, tx); if (!instant) revealEl(el, "chars"); });
   const pr = D.priceOf(p), mp = D.minPrice(p), cur = D.currency(S, lang);
-  const priceTxt = mp === null ? T("product.priceNull") : ((pr.now === null || mp < pr.now ? T("product.from") + " " : "") + D.fmt(pr.now === null || mp < pr.now ? mp : pr.now, lang, cur));
-  $("#heroMeta").textContent = [p.marque, gl(p.genre) || nm(catOf(p) || { nom: "" }), priceTxt].filter(Boolean).join("  ·  ");
+  const priceTxt = p.placeholder ? T("product.soon") : mp === null ? T("product.priceNull") : ((pr.now === null || mp < pr.now ? T("product.from") + " " : "") + D.fmt(pr.now === null || mp < pr.now ? mp : pr.now, lang, cur));
+  $("#heroMeta").textContent = p.placeholder ? priceTxt : [p.marque, gl(p.genre) || nm(catOf(p) || { nom: "" }), priceTxt].filter(Boolean).join("  ·  ");
   $("#hudNum").textContent = String(i + 1).padStart(2, "0") + " / " + String(M).padStart(2, "0");
   $("#hudCat").textContent = (nm(catOf(p) || { nom: "" })).toUpperCase();
   setText($("#profName"), nm(p));
@@ -378,4 +383,26 @@ window.addEventListener("resize", () => {
     window.scrollTo(0, was * H);
   }, 200);
 });
+/* ---------- porte secrète vers l'espace vendeur (aucun indice visuel) ---------- */
+(function(){
+  const go2 = () => { location.href = new URL("admin.html", location.href).href; };
+  const el = document.getElementById("footLogo"); 
+  if (el) {
+    let taps = [], lt = null, sx = 0, sy = 0;
+    const stop = () => { clearTimeout(lt); lt = null; };
+    el.addEventListener("pointerdown", e => {
+      const now = Date.now(); sx = e.clientX; sy = e.clientY;
+      taps = taps.filter(t => now - t < 3000); taps.push(now);
+      if (taps.length >= 5) { taps = []; stop(); go2(); return; }
+      stop(); lt = setTimeout(go2, 3000);
+    });
+    el.addEventListener("pointermove", e => { if (lt && Math.hypot(e.clientX - sx, e.clientY - sy) > 12) stop(); });
+    ["pointerup", "pointercancel", "pointerleave"].forEach(ev => el.addEventListener(ev, stop));
+    el.addEventListener("contextmenu", e => e.preventDefault());
+    el.addEventListener("dragstart", e => e.preventDefault());
+  }
+  document.addEventListener("keydown", e => {
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "B" || e.key === "b" || e.code === "KeyB")) { e.preventDefault(); go2(); }
+  });
+})();
 window.__bk = { go, errors, get section() { return section; }, lenis, get H() { return H; } };

@@ -187,6 +187,7 @@ window.BK_I18N = {
    "from": "À partir de",
    "choose": "Choisir",
    "noitem": "Aucun article dans cette catégorie.",
+   "soon": "Nouveautés bientôt disponibles.",
    "variant": "Version"
   },
   "signatureScents": {
@@ -522,6 +523,7 @@ window.BK_I18N = {
    "from": "From",
    "choose": "Choose",
    "noitem": "No item in this category.",
+   "soon": "New arrivals coming soon.",
    "variant": "Version"
   },
   "signatureScents": {
@@ -857,6 +859,7 @@ window.BK_I18N = {
    "from": "ابتداءً من",
    "choose": "اختر",
    "noitem": "لا توجد منتجات في هذا القسم.",
+   "soon": "المنتجات الجديدة قريبا.",
    "variant": "النسخة"
   },
   "signatureScents": {

@@ -132,7 +132,7 @@ export function createShop({ S, cats, prods, lang }) {
         <button class="niche" data-open="${esc(p.id)}" aria-label="${esc(nm(p))}">${nicheHTML(p)}</button>
         <div class="plaque"><h3>${esc(nm(p))}</h3>${p.marque ? `<div class="brand">${esc(p.marque)}</div>` : ""}<div class="price">${priceHTML(p)}</div>
         <button class="addb" data-add="${esc(p.id)}" ${out ? "disabled" : ""}>${out ? esc(T("product.outOfStock")) : esc(hasV ? T("product.choose") : T("buttons.addToCart"))}</button></div></article>`;
-    }).join("") || `<p class="empty-cat" style="grid-column:1/-1">${esc(T("product.noitem"))}</p>`;
+    }).join("") || `<p class="empty-cat" style="grid-column:1/-1">${esc(T(prods.length ? "product.noitem" : "product.soon"))}</p>`;
   }
   /* v5 : contenance / concentration traduites (donnees produit stockees en francais) */
   const locSize = s => String(s).replace(/\bml\b/i, T("units.ml"));
@@ -211,7 +211,7 @@ export function createShop({ S, cats, prods, lang }) {
   }
   function renderCart() {
     const ls = lines(), body = $("#cartBody");
-    state.cart = state.cart.filter(l => byId(l.id));
+    { const kept = state.cart.filter(l => byId(l.id)); if (kept.length !== state.cart.length) { state.cart = kept; save(); } }
     const count = ls.reduce((s, l) => s + l.q, 0);
     const cc = $("#cartCount"); cc.textContent = count || ""; cc.dataset.n = count;
     const priceLine = (l, n) => n === null ? `<small class="po">${esc(T("cart.priceOnRequest"))}</small>` : `<small>${money(n)}</small>`;

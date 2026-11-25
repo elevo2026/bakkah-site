@@ -55,6 +55,8 @@ function labelTexture(prod, THREE_) {
 }
 
 export function createScene({ canvas, featured, lowPower }) {
+  /* robuste à une liste vide : flacon neutre aux couleurs Bakkah */
+  if (!Array.isArray(featured) || !featured.length) featured = [{ nom: "BAKKAH", couleur1: "#4a3a1a", couleur2: "#d4af37" }];
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;

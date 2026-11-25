@@ -493,3 +493,5 @@ html[dir=rtl] .hud-right{right:auto;left:2.6rem}
   html[dir=rtl] .hero-top .kicker{font-size:.74rem;letter-spacing:0}
 }
 .subf button,#subf button{min-height:2.5rem}
+
+#footLogo{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}

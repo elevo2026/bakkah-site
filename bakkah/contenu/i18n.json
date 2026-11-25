@@ -186,6 +186,7 @@
       "from": "À partir de",
       "choose": "Choisir",
       "noitem": "Aucun article dans cette catégorie.",
+      "soon": "Nouveautés bientôt disponibles.",
       "variant": "Version"
     },
     "signatureScents": {
@@ -521,6 +522,7 @@
       "from": "From",
       "choose": "Choose",
       "noitem": "No item in this category.",
+      "soon": "New arrivals coming soon.",
       "variant": "Version"
     },
     "signatureScents": {
@@ -856,6 +858,7 @@
       "from": "ابتداءً من",
       "choose": "اختر",
       "noitem": "لا توجد منتجات في هذا القسم.",
+      "soon": "المنتجات الجديدة قريبا.",
       "variant": "النسخة"
     },
     "signatureScents": {
